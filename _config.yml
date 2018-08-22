@@ -23,7 +23,7 @@ permalink:          pretty
 # destination:        ./static
 
 port:               9002
-url: http://www.open-curriculum.org # the base hostname & protocol for your site
+url: https://dmd-program.github.io # the base hostname & protocol for your site
 baseurl: "/program-hub"
 
 # exclude this stuff when building the static site
@@ -41,7 +41,7 @@ exclude:            [
 site_name:          DMD
 site_description :  
 site_copyright:     Copyright (c) 2018
-site_url:           http://www.open-curriculum.org/program-hub
+site_url:           https://dmd-program.github.io/program-hub
 site_email:         
 site_phone:         
 

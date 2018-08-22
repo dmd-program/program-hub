@@ -1,6 +1,10 @@
 url: dmd.psu.edu # the base hostname & protocol for your site
 baseurl: ""
 
+#Authentication
+#jekyll_auth:
+#  whitelist:
+#    - "^((?!private).)*$"
 #ga_id:             ##-########-###
 site_name:          DMD
 site_description :  
