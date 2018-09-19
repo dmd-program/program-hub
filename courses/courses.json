@@ -7,7 +7,7 @@ layout: null
         {
           "title"    : {{ course.title | jsonify  }},
           "number"    : {{ course.number | jsonify  }},
-          "academic-home"    : "{{ course.academic-home | jsonify  }},
+          "academic-home"    : {{ course.academic-home | jsonify  }},
           "pre-req"    : {{ course.pre-req | jsonify  }},
           "course-type"    : {{ course.course-type | jsonify  }},
           "description"    : {{ course.description | jsonify  }},
