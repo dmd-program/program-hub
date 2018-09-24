@@ -1,0 +1,27 @@
+<script>
+new Vue({
+    delimiters: ['${', '}'],
+    el: '#courses',
+    created() {
+        this.fetchData();	
+    },
+    data: {
+        courses: []
+    },
+    methods: {
+        fetchData() {
+        axios.get('{{ site.baseurl }}/courses/courses.json').then(response => {
+            this.courses = response.data;
+            });
+        }
+    }
+});
+
+// var app = new Vue({
+//     delimiters: ['${', '}'],
+//     el: '#hello',
+//     data: {
+//     message: 'Hello Vue!'
+//     }
+// });
+</script>

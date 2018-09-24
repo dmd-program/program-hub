@@ -1,0 +1,866 @@
+---
+---
+-
+    lesson: 1
+    lesson-name: Introduction
+    week: 1
+    week-begin: 2018-05-14
+    week-end: 2018-05-20
+    assignment-name: Read Introduction to Course
+    due-date: 2018-05-20
+    due-time: 11:59 PM
+    available-date: 2018-05-14
+    available-time: 1:00 AM
+    assigned-date: 2018-05-14
+    assigned-time: 1:00 AM
+    points: 0
+    assignment-doc-url: http://document-url.com
+    dropbox-url: http://dropbox.com
+    description: description of the assignment
+    rubric-url: http://rubric-url.com
+-
+    lesson: 1
+    lesson-name: Introduction
+    week: 1
+    week-begin: 2018-05-14
+    week-end: 2018-05-20
+    assignment-name: Introductions Assignment
+    due-date: 2018-05-20
+    due-time: 11:59 PM
+    available-date: 2018-05-14
+    available-time: 1:00 AM
+    assigned-date: 2018-05-14
+    assigned-time: 1:00 AM
+    points: 0
+    assignment-doc-url: http://document-url.com
+    dropbox-url: http://dropbox.com
+    description: description of the assignment
+    rubric-url: http://rubric-url.com
+-
+    lesson: 1
+    lesson-name: What is Design?
+    week: 1
+    week-begin: 2018-05-14
+    week-end: 2018-05-20
+    assignment-name: Chapter 1&2 Reading Reflection
+    due-date: 2018-05-20
+    due-time: 11:59 PM
+    available-date: 2018-05-14
+    available-time: 1:00 AM
+    assigned-date: 2018-05-14
+    assigned-time: 1:00 AM
+    points: 5
+    assignment-doc-url: http://document-url.com
+    dropbox-url: http://dropbox.com
+    description: description of the assignment
+    rubric-url: http://rubric-url.com
+-
+    lesson: 1
+    lesson-name: What is Design?
+    week: 1
+    week-begin: 2018-05-14
+    week-end: 2018-05-20
+    assignment-name: End of Lesson Discussion
+    due-date: 2018-05-20
+    due-time: 11:59 PM
+    available-date: 2018-05-14
+    available-time: 1:00 AM
+    assigned-date: 2018-05-14
+    assigned-time: 1:00 AM
+    points: 0
+    assignment-doc-url: http://document-url.com
+    dropbox-url: http://dropbox.com
+    description: description of the assignment
+    rubric-url: http://rubric-url.com
+-
+    lesson: 2
+    lesson-name: Visual and Interaction Design
+    week: 2
+    week-begin: 2018-05-21
+    week-end: 2018-05-27
+    assignment-name: Daily Design Journal: Assigned
+    due-date: 2018-05-20
+    due-time: 11:59 PM
+    available-date: 2018-05-14
+    available-time: 1:00 AM
+    assigned-date: 2018-05-14
+    assigned-time: 1:00 AM
+    points: 0
+    assignment-doc-url: http://document-url.com
+    dropbox-url: http://dropbox.com
+    description: description of the assignment
+    rubric-url: http://rubric-url.com
+-
+    lesson: 2
+    lesson-name: Visual and Interaction Design
+    week: 2
+    week-begin: 2018-05-21
+    week-end: 2018-05-27
+    assignment-name: Chapter 3 Reading Reflection
+    due-date: 2018-05-27
+    due-time: 11:59 PM
+    available-date: 2018-05-20
+    available-time: 1:00 AM
+    assigned-date: 2018-05-20
+    assigned-time: 1:00 AM
+    points: 5
+    assignment-doc-url: http://document-url.com
+    dropbox-url: http://dropbox.com
+    description: description of the assignment
+    rubric-url: http://rubric-url.com
+-
+    lesson: 2
+    lesson-name: Visual and Interaction Design
+    week: 2
+    week-begin: 2018-05-21
+    week-end: 2018-05-27
+    assignment-name: Discover: Interview
+    due-date: 2018-05-27
+    due-time: 11:59 PM
+    available-date: 2018-05-20
+    available-time: 1:00 AM
+    assigned-date: 2018-05-20
+    assigned-time: 1:00 AM
+    points: 5
+    assignment-doc-url: http://document-url.com
+    dropbox-url: http://dropbox.com
+    description: description of the assignment
+    rubric-url: http://rubric-url.com
+-
+    lesson: 2
+    lesson-name: Visual and Interaction Design
+    week: 2
+    week-begin: 2018-05-21
+    week-end: 2018-05-27
+    assignment-name: Define: Themes and Insights
+    due-date: 2018-05-27
+    due-time: 11:59 PM
+    available-date: 2018-05-20
+    available-time: 1:00 AM
+    assigned-date: 2018-05-20
+    assigned-time: 1:00 AM
+    points: 5
+    assignment-doc-url: http://document-url.com
+    dropbox-url: http://dropbox.com
+    description: description of the assignment
+    rubric-url: http://rubric-url.com
+-
+    lesson: 2
+    lesson-name: Visual and Interaction Design
+    week: 3
+    week-begin: 2018-05-28
+    week-end: 2018-06-03
+    assignment-name: Chapter 4 Reading Reflection
+    due-date: 2018-06-03
+    due-time: 11:59 PM
+    available-date: 2018-05-20
+    available-time: 1:00 AM
+    assigned-date: 2018-05-27
+    assigned-time: 1:00 AM
+    points: 5
+    assignment-doc-url: http://document-url.com
+    dropbox-url: http://dropbox.com
+    description: description of the assignment
+    rubric-url: http://rubric-url.com
+-
+    lesson: 2
+    lesson-name: Visual and Interaction Design
+    week: 3
+    week-begin: 2018-05-28
+    week-end: 2018-06-03
+    assignment-name: Define: How Might We
+    due-date: 2018-06-03
+    due-time: 11:59 PM
+    available-date: 2018-05-20
+    available-time: 1:00 AM
+    assigned-date: 2018-05-27
+    assigned-time: 1:00 AM
+    points: 5
+    assignment-doc-url: http://document-url.com
+    dropbox-url: http://dropbox.com
+    description: description of the assignment
+    rubric-url: http://rubric-url.com
+-
+    lesson: 2
+    lesson-name: Visual and Interaction Design
+    week: 3
+    week-begin: 2018-05-28
+    week-end: 2018-06-03
+    assignment-name: Develop: Brainstorm
+    due-date: 2018-06-03
+    due-time: 11:59 PM
+    available-date: 2018-05-20
+    available-time: 1:00 AM
+    assigned-date: 2018-05-27
+    assigned-time: 1:00 AM
+    points: 5
+    assignment-doc-url: http://document-url.com
+    dropbox-url: http://dropbox.com
+    description: description of the assignment
+    rubric-url: http://rubric-url.com
+-
+    lesson: 2
+    lesson-name: Visual and Interaction Design
+    week: 4
+    week-begin: 2018-06-04
+    week-end: 2018-06-10
+    assignment-name: Chapter 5 Reading Reflection
+    due-date: 2018-06-06
+    due-time: 11:59 PM
+    available-date: 2018-05-20
+    available-time: 1:00 AM
+    assigned-date: 2018-06-03
+    assigned-time: 1:00 AM
+    points: 5
+    assignment-doc-url: http://document-url.com
+    dropbox-url: http://dropbox.com
+    description: description of the assignment
+    rubric-url: http://rubric-url.com
+-
+    lesson: 2
+    lesson-name: Visual and Interaction Design
+    week: 4
+    week-begin: 2018-06-04
+    week-end: 2018-06-10
+    assignment-name: Develop: Storyboad
+    due-date: 2018-06-06
+    due-time: 11:59 PM
+    available-date: 2018-05-20
+    available-time: 1:00 AM
+    assigned-date: 2018-06-03
+    assigned-time: 1:00 AM
+    points: 5
+    assignment-doc-url: http://document-url.com
+    dropbox-url: http://dropbox.com
+    description: description of the assignment
+    rubric-url: http://rubric-url.com
+-
+    lesson: 2
+    lesson-name: Visual and Interaction Design
+    week: 4
+    week-begin: 2018-06-04
+    week-end: 2018-06-10
+    assignment-name: Develop: MVP Prototype
+    due-date: 2018-06-10
+    due-time: 11:59 PM
+    available-date: 2018-05-20
+    available-time: 1:00 AM
+    assigned-date: 2018-06-03
+    assigned-time: 1:00 AM
+    points: 5
+    assignment-doc-url: http://document-url.com
+    dropbox-url: http://dropbox.com
+    description: description of the assignment
+    rubric-url: http://rubric-url.com
+-
+    lesson: 2
+    lesson-name: Visual and Interaction Design
+    week: 5
+    week-begin: 2018-06-11
+    week-end: 2018-06-17
+    assignment-name: Develop: Test and Review
+    due-date: 2018-06-13
+    due-time: 11:59 PM
+    available-date: 2018-05-20
+    available-time: 1:00 AM
+    assigned-date: 2018-06-10
+    assigned-time: 1:00 AM
+    points: 5
+    assignment-doc-url: http://document-url.com
+    dropbox-url: http://dropbox.com
+    description: description of the assignment
+    rubric-url: http://rubric-url.com
+-
+    lesson: 2
+    lesson-name: Visual and Interaction Design
+    week: 5
+    week-begin: 2018-06-11
+    week-end: 2018-06-17
+    assignment-name: Develop: Iterate Prototype
+    due-date: 2018-06-17
+    due-time: 11:59 PM
+    available-date: 2018-05-20
+    available-time: 1:00 AM
+    assigned-date: 2018-06-13
+    assigned-time: 1:00 AM
+    points: 5
+    assignment-doc-url: http://document-url.com
+    dropbox-url: http://dropbox.com
+    description: description of the assignment
+    rubric-url: http://rubric-url.com
+-
+    lesson: 2
+    lesson-name: Visual and Interaction Design
+    week: 5
+    week-begin: 2018-06-11
+    week-end: 2018-06-17
+    assignment-name: Chapter 6 Reading Reflection
+    due-date: 2018-06-17
+    due-time: 11:59 PM
+    available-date: 2018-05-20
+    available-time: 1:00 AM
+    assigned-date: 2018-06-15
+    assigned-time: 1:00 AM
+    points: 5
+    assignment-doc-url: http://document-url.com
+    dropbox-url: http://dropbox.com
+    description: description of the assignment
+    rubric-url: http://rubric-url.com
+-
+    lesson: 2
+    lesson-name: Visual and Interaction Design
+    week: 5
+    week-begin: 2018-06-11
+    week-end: 2018-06-17
+    assignment-name: Daily Design Journal: Report In
+    due-date: 2018-06-17
+    due-time: 11:59 PM
+    available-date: 2018-05-20
+    available-time: 1:00 AM
+    assigned-date: 2018-06-15
+    assigned-time: 1:00 AM
+    points: 10
+    assignment-doc-url: http://document-url.com
+    dropbox-url: http://dropbox.com
+    description: description of the assignment
+    rubric-url: http://rubric-url.com
+-
+    lesson: 2
+    lesson-name: Visual and Interaction Design
+    week: 6
+    week-begin: 2018-06-18
+    week-end: 2018-06-24
+    assignment-name: Deliver: Final Prototype
+    due-date: 2018-06-20
+    due-time: 11:59 PM
+    available-date: 2018-05-20
+    available-time: 1:00 AM
+    assigned-date: 2018-06-15
+    assigned-time: 1:00 AM
+    points: 25
+    assignment-doc-url: http://document-url.com
+    dropbox-url: http://dropbox.com
+    description: description of the assignment
+    rubric-url: http://rubric-url.com
+-
+    lesson: 2
+    lesson-name: Visual and Interaction Design
+    week: 6
+    week-begin: 2018-06-18
+    week-end: 2018-06-24
+    assignment-name: Chapter 7 Reading Reflection
+    due-date: 2018-06-20
+    due-time: 11:59 PM
+    available-date: 2018-05-20
+    available-time: 1:00 AM
+    assigned-date: 2018-06-17
+    assigned-time: 1:00 AM
+    points: 5
+    assignment-doc-url: http://document-url.com
+    dropbox-url: http://dropbox.com
+    description: description of the assignment
+    rubric-url: http://rubric-url.com
+-
+    lesson: 3
+    lesson-name: Storytelling
+    week: 6
+    week-begin: 2018-06-18
+    week-end: 2018-06-24
+    assignment-name: Chapter 8 Reading Reflection
+    due-date: 2018-06-24
+    due-time: 11:59 PM
+    available-date: 2018-06-17
+    available-time: 1:00 AM
+    assigned-date: 2018-06-17
+    assigned-time: 1:00 AM
+    points: 5
+    assignment-doc-url: http://document-url.com
+    dropbox-url: http://dropbox.com
+    description: description of the assignment
+    rubric-url: http://rubric-url.com
+-
+    lesson: 3
+    lesson-name: Storytelling
+    week: 6
+    week-begin: 2018-06-18
+    week-end: 2018-06-24
+    assignment-name: Discover: Word-pairs
+    due-date: 2018-06-24
+    due-time: 11:59 PM
+    available-date: 2018-06-17
+    available-time: 1:00 AM
+    assigned-date: 2018-06-20
+    assigned-time: 1:00 AM
+    points: 5
+    assignment-doc-url: http://document-url.com
+    dropbox-url: http://dropbox.com
+    description: description of the assignment
+    rubric-url: http://rubric-url.com
+-
+    lesson: 3
+    lesson-name: Storytelling
+    week: 6
+    week-begin: 2018-06-18
+    week-end: 2018-06-24
+    assignment-name: Define: Synopsis
+    due-date: 2018-06-24
+    due-time: 11:59 PM
+    available-date: 2018-06-17
+    available-time: 1:00 AM
+    assigned-date: 2018-06-20
+    assigned-time: 1:00 AM
+    points: 5
+    assignment-doc-url: http://document-url.com
+    dropbox-url: http://dropbox.com
+    description: description of the assignment
+    rubric-url: http://rubric-url.com
+-
+    lesson: 3
+    lesson-name: Storytelling
+    week: 6
+    week-begin: 2018-06-18
+    week-end: 2018-06-24
+    assignment-name: Develop: Story and Plot
+    due-date: 2018-06-24
+    due-time: 11:59 PM
+    available-date: 2018-06-17
+    available-time: 1:00 AM
+    assigned-date: 2018-06-20
+    assigned-time: 1:00 AM
+    points: 5
+    assignment-doc-url: http://document-url.com
+    dropbox-url: http://dropbox.com
+    description: description of the assignment
+    rubric-url: http://rubric-url.com
+-
+    lesson: 3
+    lesson-name: Storytelling
+    week: 7
+    week-begin: 2018-06-25
+    week-end: 2018-07-01
+    assignment-name: Develop: Characters
+    due-date: 2018-06-27
+    due-time: 11:59 PM
+    available-date: 2018-06-17
+    available-time: 1:00 AM
+    assigned-date: 2018-06-24
+    assigned-time: 1:00 AM
+    points: 5
+    assignment-doc-url: http://document-url.com
+    dropbox-url: http://dropbox.com
+    description: description of the assignment
+    rubric-url: http://rubric-url.com
+-
+    lesson: 3
+    lesson-name: Storytelling
+    week: 7
+    week-begin: 2018-06-25
+    week-end: 2018-07-01
+    assignment-name: Chapter 9 Reading Reflection
+    due-date: 2018-06-27
+    due-time: 11:59 PM
+    available-date: 2018-06-17
+    available-time: 1:00 AM
+    assigned-date: 2018-06-24
+    assigned-time: 1:00 AM
+    points: 5
+    assignment-doc-url: http://document-url.com
+    dropbox-url: http://dropbox.com
+    description: description of the assignment
+    rubric-url: http://rubric-url.com
+-
+    lesson: 3
+    lesson-name: Storytelling
+    week: 7
+    week-begin: 2018-06-25
+    week-end: 2018-07-01
+    assignment-name: Develop: Hypertext Narrative Draft 1
+    due-date: 2018-06-27
+    due-time: 11:59 PM
+    available-date: 2018-06-17
+    available-time: 1:00 AM
+    assigned-date: 2018-06-24
+    assigned-time: 1:00 AM
+    points: 5
+    assignment-doc-url: http://document-url.com
+    dropbox-url: http://dropbox.com
+    description: description of the assignment
+    rubric-url: http://rubric-url.com
+-
+    lesson: 3
+    lesson-name: Storytelling
+    week: 7
+    week-begin: 2018-06-25
+    week-end: 2018-07-01
+    assignment-name: Develop: Feedback
+    due-date: 2018-07-01
+    due-time: 11:59 PM
+    available-date: 2018-06-17
+    available-time: 1:00 AM
+    assigned-date: 2018-06-27
+    assigned-time: 1:00 AM
+    points: 5
+    assignment-doc-url: http://document-url.com
+    dropbox-url: http://dropbox.com
+    description: description of the assignment
+    rubric-url: http://rubric-url.com
+-
+    lesson: 3
+    lesson-name: Storytelling
+    week: 8
+    week-begin: 2018-07-02
+    week-end: 2018-07-08
+    assignment-name: Deliver: Hypertext Narrative Draft 2
+    due-date: 2018-07-08
+    due-time: 11:59 PM
+    available-date: 2018-06-17
+    available-time: 1:00 AM
+    assigned-date: 2018-07-01
+    assigned-time: 1:00 AM
+    points: 25
+    assignment-doc-url: http://document-url.com
+    dropbox-url: http://dropbox.com
+    description: description of the assignment
+    rubric-url: http://rubric-url.com
+-
+    lesson: 3
+    lesson-name: Storytelling
+    week: 8
+    week-begin: 2018-07-02
+    week-end: 2018-07-08
+    assignment-name: End of Lesson Discussion
+    due-date: 2018-07-08
+    due-time: 11:59 PM
+    available-date: 2018-06-17
+    available-time: 1:00 AM
+    assigned-date: 2018-07-01
+    assigned-time: 1:00 AM
+    points: 0
+    assignment-doc-url: http://document-url.com
+    dropbox-url: http://dropbox.com
+    description: description of the assignment
+    rubric-url: http://rubric-url.com
+-
+    lesson: 4
+    lesson-name: Open Design
+    week: 9
+    week-begin: 2018-07-09
+    week-end: 2018-07-15
+    assignment-name: Chapter 10 Reading Reflection
+    due-date: 2018-07-15
+    due-time: 11:59 PM
+    available-date: 2018-07-08
+    available-time: 1:00 AM
+    assigned-date: 2018-07-08
+    assigned-time: 1:00 AM
+    points: 5
+    assignment-doc-url: http://document-url.com
+    dropbox-url: http://dropbox.com
+    description: description of the assignment
+    rubric-url: http://rubric-url.com
+-
+    lesson: 4
+    lesson-name: Open Design
+    week: 9
+    week-begin: 2018-07-09
+    week-end: 2018-07-15
+    assignment-name: Chapter 11 Reading Reflection
+    due-date: 2018-07-15
+    due-time: 11:59 PM
+    available-date: 2018-07-08
+    available-time: 1:00 AM
+    assigned-date: 2018-07-08
+    assigned-time: 1:00 AM
+    points: 5
+    assignment-doc-url: http://document-url.com
+    dropbox-url: http://dropbox.com
+    description: description of the assignment
+    rubric-url: http://rubric-url.com
+-
+    lesson: 4
+    lesson-name: Open Design
+    week: 9
+    week-begin: 2018-07-09
+    week-end: 2018-07-15
+    assignment-name: Discover: Toy Design Research
+    due-date: 2018-07-15
+    due-time: 11:59 PM
+    available-date: 2018-07-08
+    available-time: 1:00 AM
+    assigned-date: 2018-07-08
+    assigned-time: 1:00 AM
+    points: 5
+    assignment-doc-url: http://document-url.com
+    dropbox-url: http://dropbox.com
+    description: description of the assignment
+    rubric-url: http://rubric-url.com
+-
+    lesson: 4
+    lesson-name: Open Design
+    week: 9
+    week-begin: 2018-07-09
+    week-end: 2018-07-15
+    assignment-name: Discover: Resources
+    due-date: 2018-07-15
+    due-time: 11:59 PM
+    available-date: 2018-07-08
+    available-time: 1:00 AM
+    assigned-date: 2018-07-08
+    assigned-time: 1:00 AM
+    points: 5
+    assignment-doc-url: http://document-url.com
+    dropbox-url: http://dropbox.com
+    description: description of the assignment
+    rubric-url: http://rubric-url.com
+-
+    lesson: 4
+    lesson-name: Open Design
+    week: 9
+    week-begin: 2018-07-09
+    week-end: 2018-07-15
+    assignment-name: Discover: Modular Design Research
+    due-date: 2018-07-15
+    due-time: 11:59 PM
+    available-date: 2018-07-08
+    available-time: 1:00 AM
+    assigned-date: 2018-07-08
+    assigned-time: 1:00 AM
+    points: 5
+    assignment-doc-url: http://document-url.com
+    dropbox-url: http://dropbox.com
+    description: description of the assignment
+    rubric-url: http://rubric-url.com
+-
+    lesson: 4
+    lesson-name: Open Design
+    week: 10
+    week-begin: 2018-07-16
+    week-end: 2018-07-22
+    assignment-name: Chapter 12 Reading Reflection
+    due-date: 2018-07-22
+    due-time: 11:59 PM
+    available-date: 2018-07-08
+    available-time: 1:00 AM
+    assigned-date: 2018-07-15
+    assigned-time: 1:00 AM
+    points: 5
+    assignment-doc-url: http://document-url.com
+    dropbox-url: http://dropbox.com
+    description: description of the assignment
+    rubric-url: http://rubric-url.com
+-
+    lesson: 4
+    lesson-name: Open Design
+    week: 10
+    week-begin: 2018-07-16
+    week-end: 2018-07-22
+    assignment-name: Define: Product Pitch
+    due-date: 2018-07-22
+    due-time: 11:59 PM
+    available-date: 2018-07-08
+    available-time: 1:00 AM
+    assigned-date: 2018-07-15
+    assigned-time: 1:00 AM
+    points: 5
+    assignment-doc-url: http://document-url.com
+    dropbox-url: http://dropbox.com
+    description: description of the assignment
+    rubric-url: http://rubric-url.com
+-
+    lesson: 4
+    lesson-name: Open Design
+    week: 10
+    week-begin: 2018-07-16
+    week-end: 2018-07-22
+    assignment-name: Develop: Instructions
+    due-date: 2018-07-22
+    due-time: 11:59 PM
+    available-date: 2018-07-08
+    available-time: 1:00 AM
+    assigned-date: 2018-07-15
+    assigned-time: 1:00 AM
+    points: 5
+    assignment-doc-url: http://document-url.com
+    dropbox-url: http://dropbox.com
+    description: description of the assignment
+    rubric-url: http://rubric-url.com
+-
+    lesson: 4
+    lesson-name: Open Design
+    week: 10
+    week-begin: 2018-07-16
+    week-end: 2018-07-22
+    assignment-name: Develop: Prototyping
+    due-date: 2018-07-22
+    due-time: 11:59 PM
+    available-date: 2018-07-08
+    available-time: 1:00 AM
+    assigned-date: 2018-07-15
+    assigned-time: 1:00 AM
+    points: 5
+    assignment-doc-url: http://document-url.com
+    dropbox-url: http://dropbox.com
+    description: description of the assignment
+    rubric-url: http://rubric-url.com
+-
+    lesson: 4
+    lesson-name: Open Design
+    week: 11
+    week-begin: 2018-07-23
+    week-end: 2018-07-29
+    assignment-name: Chapter 13 Reading Reflection
+    due-date: 2018-07-29
+    due-time: 11:59 PM
+    available-date: 2018-07-08
+    available-time: 1:00 AM
+    assigned-date: 2018-07-22
+    assigned-time: 1:00 AM
+    points: 5
+    assignment-doc-url: http://document-url.com
+    dropbox-url: http://dropbox.com
+    description: description of the assignment
+    rubric-url: http://rubric-url.com
+-
+    lesson: 4
+    lesson-name: Open Design
+    week: 11
+    week-begin: 2018-07-23
+    week-end: 2018-07-29
+    assignment-name: Develop: Test
+    due-date: 2018-07-29
+    due-time: 11:59 PM
+    available-date: 2018-07-08
+    available-time: 1:00 AM
+    assigned-date: 2018-07-22
+    assigned-time: 1:00 AM
+    points: 5
+    assignment-doc-url: http://document-url.com
+    dropbox-url: http://dropbox.com
+    description: description of the assignment
+    rubric-url: http://rubric-url.com
+-
+    lesson: 4
+    lesson-name: Open Design
+    week: 12
+    week-begin: 2018-07-30
+    week-end: 2018-08-05
+    assignment-name: Develop: Iterate
+    due-date: 2018-08-01
+    due-time: 11:59 PM
+    available-date: 2018-07-08
+    available-time: 1:00 AM
+    assigned-date: 2018-07-29
+    assigned-time: 1:00 AM
+    points: 5
+    assignment-doc-url: http://document-url.com
+    dropbox-url: http://dropbox.com
+    description: description of the assignment
+    rubric-url: http://rubric-url.com
+-
+    lesson: 4
+    lesson-name: Open Design
+    week: 12
+    week-begin: 2018-07-30
+    week-end: 2018-08-05
+    assignment-name: Chapter 14 Reading Reflection
+    due-date: 2018-08-01
+    due-time: 11:59 PM
+    available-date: 2018-07-08
+    available-time: 1:00 AM
+    assigned-date: 2018-07-29
+    assigned-time: 1:00 AM
+    points: 5
+    assignment-doc-url: http://document-url.com
+    dropbox-url: http://dropbox.com
+    description: description of the assignment
+    rubric-url: http://rubric-url.com
+-
+    lesson: 4
+    lesson-name: Open Design
+    week: 12
+    week-begin: 2018-07-30
+    week-end: 2018-08-05
+    assignment-name: Deliver: Open Design
+    due-date: 2018-08-05
+    due-time: 11:59 PM
+    available-date: 2018-07-08
+    available-time: 1:00 AM
+    assigned-date: 2018-08-01
+    assigned-time: 1:00 AM
+    points: 25
+    assignment-doc-url: http://document-url.com
+    dropbox-url: http://dropbox.com
+    description: description of the assignment
+    rubric-url: http://rubric-url.com
+-
+    lesson: 4
+    lesson-name: Open Design
+    week: 12
+    week-begin: 2018-07-30
+    week-end: 2018-08-05
+    assignment-name: End of Lesson Discussion
+    due-date: 2018-08-05
+    due-time: 11:59 PM
+    available-date: 2018-07-08
+    available-time: 1:00 AM
+    assigned-date: 2018-08-01
+    assigned-time: 1:00 AM
+    points: 0
+    assignment-doc-url: http://document-url.com
+    dropbox-url: http://dropbox.com
+    description: description of the assignment
+    rubric-url: http://rubric-url.com
+-
+    lesson: 5
+    lesson-name: Wrap up
+    week: 13
+    week-begin: 2018-08-06
+    week-end: 2018-08-10
+    assignment-name: Chapter 15 Reading Reflection
+    due-date: 2018-08-10
+    due-time: 11:59 PM
+    available-date: 2018-08-05
+    available-time: 1:00 AM
+    assigned-date: 2018-08-05
+    assigned-time: 1:00 AM
+    points: 5
+    assignment-doc-url: http://document-url.com
+    dropbox-url: http://dropbox.com
+    description: description of the assignment
+    rubric-url: http://rubric-url.com
+-
+    lesson: 5
+    lesson-name: Wrap up
+    week: 13
+    week-begin: 2018-08-06
+    week-end: 2018-08-08
+    assignment-name: Pathway Design Activity
+    due-date: 2018-08-10
+    due-time: 11:59 PM
+    available-date: 2018-08-05
+    available-time: 1:00 AM
+    assigned-date: 2018-08-05
+    assigned-time: 1:00 AM
+    points: 25
+    assignment-doc-url: http://document-url.com
+    dropbox-url: http://dropbox.com
+    description: description of the assignment
+    rubric-url: http://rubric-url.com
+-
+    lesson: 5
+    lesson-name: Wrap up
+    week: 13
+    week-begin: 2018-08-06
+    week-end: 2018-08-08
+    assignment-name: End of Lesson Discussion
+    due-date: 2018-08-10
+    due-time: 11:59 PM
+    available-date: 2018-08-05
+    available-time: 1:00 AM
+    assigned-date: 2018-08-05
+    assigned-time: 1:00 AM
+    points: 0
+    assignment-doc-url: http://document-url.com
+    dropbox-url: http://dropbox.com
+    description: description of the assignment
+    rubric-url: http://rubric-url.com
