@@ -1,13 +1,42 @@
---- 
+---
 layout: default-vue
 title: Vue
 published: true
 ---
-<div id="courses">
-    <ul>
-        <li v-for="course of courses">
-        <strong>${course.number}: </strong>${course.title}
-        </li>
-    </ul>
-</div>
+<div class="row expanded bg-color-gray">
+    <div class="columns small-6 ">
+    
 
+        <div prefix="oer:http://oerschema.org cc:http://creativecommons.org/ns# schema:http://schema.org">
+            <div id="courses">
+                <ul>
+                    <li v-for="course of courses">
+                    <div v-bind:resource=" '#id' + course.number | slugify" typeof="oer:LearningComponent">
+                        <meta rel="cc:license" href="https://creativecommons.org/licenses/by/4.0/" content="License: CC-BY-4.0">
+                        <meta property="cc:attributionName" content="Michael Collins">
+                    <a v-bind:href="'{{site.baseurl}}' + course.url"><strong>${course.number}: </strong>${course.title}</a>
+                    <span v-bind:class="course['academic-home']">${course['academic-home']}:</span>
+                    </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+
+    </div>
+    <div class="columns small-6 ">
+            
+
+        <div id="assignments">
+            <ul>
+                <li v-for="assignment of assignments">
+                <!-- <div v-bind:resource="'#lesson-' + assignment['lesson']" v-bind: typeof="oer:LearningComponent"> -->
+                    <strong>${assignment['assignment-name']}</strong>
+                <!-- </div> -->
+                </li>
+            </ul>
+        </div>
+
+
+    </div>
+</div>

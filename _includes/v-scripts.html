@@ -1,5 +1,5 @@
 <script>
-new Vue({
+var coursesVue = new Vue({
     delimiters: ['${', '}'],
     el: '#courses',
     created() {
@@ -17,11 +17,41 @@ new Vue({
     }
 });
 
-// var app = new Vue({
-//     delimiters: ['${', '}'],
-//     el: '#hello',
-//     data: {
-//     message: 'Hello Vue!'
-//     }
-// });
+var assignmentsVue = new Vue({
+    delimiters: ['${', '}'],
+    el: '#assignments',
+    created() {
+        this.fetchData();	
+    },
+    data: {
+        assignments: []
+    },
+    methods: {
+        fetchData() {
+        axios.get('{{ site.baseurl }}/courses/dmd100-calendar-su18.json').then(response => {
+            this.assignments = response.data;
+            });
+        }
+    }
+});
+
+Vue.filter('slugify', function(value) {
+  value = value.replace(/^\s+|\s+$/g, ''); // trim
+  value = value.toLowerCase();
+
+  // remove accents, swap ñ for n, etc
+  var from = "ãàáäâẽèéëêìíïîõòóöôùúüûñç·/_,:;";
+  var to   = "aaaaaeeeeeiiiiooooouuuunc------";
+  for (var i=0, l=from.length ; i<l ; i++) {
+    value = value.replace(new RegExp(from.charAt(i), 'g'), to.charAt(i));
+  }
+
+  value = value.replace(/[^a-z0-9 -]/g, '') // remove invalid chars
+    .replace(/\s+/g, '-') // collapse whitespace and replace by -
+    .replace(/-+/g, '-'); // collapse dashes
+
+  return value;
+});
+
+
 </script>
