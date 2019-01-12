@@ -4,6 +4,6 @@ number: COMM 493
 academic-home: Comm
 course-type: [Additional]
 description:  
-bulletin-link: http://bulletins.psu.edu/undergrad/courses/c/comm/493
+bulletin-link: https://bulletins.psu.edu/search/?search=%22comm+493%22
 pathway-list: [Media for Civic Engagement]
 ---

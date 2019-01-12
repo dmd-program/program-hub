@@ -4,6 +4,6 @@ number: COMM 180
 academic-home: Comm
 course-type: [Additional, General Education]
 description:  
-bulletin-link: http://bulletins.psu.edu/undergrad/courses/c/comm/180
+bulletin-link: https://bulletins.psu.edu/search/?search=%22comm+180%22
 pathway-list: [Generalist, Video Production]
 ---

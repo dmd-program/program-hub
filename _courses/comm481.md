@@ -4,6 +4,6 @@ number: COMM 481
 academic-home: Comm
 course-type: [Additional]
 description:  
-bulletin-link: http://bulletins.psu.edu/undergrad/courses/c/comm/481
+bulletin-link: https://bulletins.psu.edu/search/?search=%22comm+481%22
 pathway-list: [Video Production]
 ---

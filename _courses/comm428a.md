@@ -4,6 +4,6 @@ number: COMM 428A
 academic-home: Comm
 course-type: [Additional]
 description:  
-bulletin-link: http://bulletins.psu.edu/undergrad/courses/c/comm/428a
+bulletin-link: https://bulletins.psu.edu/search/?search=%22comm+428a%22
 pathway-list: [Generalist, Video Production, Interactive Media Developer]
 ---
