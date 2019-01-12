@@ -1,0 +1,16 @@
+--- 
+layout: default-vue
+title: Vue Assignment Builder
+published: true
+---
+<div prefix="oer:http://oerschema.org cc:http://creativecommons.org/ns# schema:http://schema.org">
+    <div id="courses">
+        <ul>
+            <li v-for="course of courses">
+            <div resource="#${course.number | slugify }" typeof="oer:LearningComponent">
+            <strong>${course.number}: </strong>${course.title}
+            </div>
+            </li>
+        </ul>
+    </div>
+</div>
