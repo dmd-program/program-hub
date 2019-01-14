@@ -1,6 +1,7 @@
 ---
 title: Summary of Electronic Media and Telecommunications
 number: COMM 180
+credits: 3
 academic-home: Comm
 course-type: [Additional, General Education]
 description:  

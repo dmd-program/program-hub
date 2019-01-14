@@ -1,6 +1,7 @@
 ---
 title: Idea Development and Media Writing
 number: COMM 342
+credits: 3
 academic-home: Comm
 course-type: [Additional]
 description:  

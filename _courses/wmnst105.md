@@ -1,6 +1,7 @@
 ---
 title: Living in a Diverse World
 number: WMNST 105
+credits: 3
 academic-home: other
 course-type: [Supporting, General Education]
 pre-req:

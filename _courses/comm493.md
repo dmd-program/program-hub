@@ -1,6 +1,7 @@
 ---
 title: Entrepreneurship in the Information Age
 number: COMM 493
+credits: 3
 academic-home: Comm
 course-type: [Additional]
 description:  

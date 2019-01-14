@@ -1,6 +1,7 @@
 ---
 title: Architecture and Ideas
 number: ARCH 010
+credits: 3
 academic-home: Arts & Arch
 pre-req:
 course-type: [Supporting, General Education]

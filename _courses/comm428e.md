@@ -1,6 +1,7 @@
 ---
 title: Social Media Strategies
 number: COMM 428E
+credits: 3
 academic-home: Comm
 course-type: [Additional]
 description:  

@@ -1,6 +1,7 @@
 ---
 title: Cultural Anthropology
 number: ANTH 045
+credits: 3
 academic-home: other
 pre-req:
 course-type: [Supporting, General Education]

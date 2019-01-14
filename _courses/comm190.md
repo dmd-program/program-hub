@@ -1,6 +1,7 @@
 ---
 title: Gaming and Interactive Media
 number: COMM 190
+credits: 3
 academic-home: Comm
 pre-req:
 course-type: [Supporting, General Education]

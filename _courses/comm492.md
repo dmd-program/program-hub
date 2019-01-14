@@ -1,6 +1,7 @@
 ---
 title: Internet Law and Policy
 number: COMM 492
+credits: 3
 academic-home: Comm
 course-type: [Additional]
 description:  

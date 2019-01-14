@@ -1,6 +1,7 @@
 ---
 title: Strategic Communications Law
 number: COMM 428A
+credits: 3
 academic-home: Comm
 course-type: [Additional]
 description:  

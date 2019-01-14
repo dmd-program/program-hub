@@ -1,6 +1,7 @@
 ---
 title: Introduction to Digital Art and Design Criticism
 number: ART 211Y
+credits: 3
 academic-home: Arts & Arch
 program-core: true
 course-type: [Additional]

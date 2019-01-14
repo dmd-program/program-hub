@@ -1,6 +1,7 @@
 ---
 title: Introduction to Social Psychology
 number: PSYCH 221
+credits: 3
 academic-home: other
 pre-req: PSYCH 100
 course-type: [Supporting, General Education]

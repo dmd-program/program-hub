@@ -1,6 +1,7 @@
 ---
 title: Advanced Multimedia Production
 number: COMM 481
+credits: 3
 academic-home: Comm
 course-type: [Additional]
 description:  

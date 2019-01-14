@@ -1,6 +1,7 @@
 ---
 title: Basic Filmmaking
 number: COMM 242
+credits: 3
 academic-home: Comm
 course-type: [Additional]
 description:  

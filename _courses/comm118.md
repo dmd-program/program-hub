@@ -1,6 +1,7 @@
 ---
 title: Introduction to Media Effects
 number: COMM 118
+credits: 3
 academic-home: Comm
 course-type: [Additional, General Education]
 description:  

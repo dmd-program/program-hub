@@ -1,6 +1,7 @@
 ---
 title: Basic Photography for Communications
 number: COMM 215
+credits: 3
 academic-home: Comm
 program-core: true
 course-type: [Prescribed]

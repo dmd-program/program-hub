@@ -1,6 +1,7 @@
 ---
 title: Introduction to Article Writing
 number: ENGL 215
+credits: 3
 academic-home: other
 course-type: [Supporting]
 pre-req: ENGL 15 or ENGL 30

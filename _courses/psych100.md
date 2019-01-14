@@ -1,6 +1,7 @@
 ---
 title: Introductory Psychology
 number: PSYCH 100
+credits: 3
 academic-home: other
 pre-req:
 course-type: [Supporting, General Education]

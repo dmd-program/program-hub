@@ -1,6 +1,7 @@
 ---
 title: Gender, Diversity and the Media
 number: COMM 205
+credits: 3
 academic-home: Comm
 pre-req:
 course-type: [Supporting, General Education]

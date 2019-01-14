@@ -1,6 +1,7 @@
 ---
 title: Commentary on Art
 number: ART 122Y
+credits: 3
 academic-home: Arts & Arch
 course-type: [Additional, General Education]
 description: An introduction to verbal commentary, both oral and written, about art. The development of critical and expressive skills given emphasis.
