@@ -78,7 +78,7 @@
     week: 2
     week-begin: 2018-05-21
     week-end: 2018-05-27
-    assignment-name: Daily Design Journal: Assigned
+    assignment-name: 'Daily Design Journal: Assigned'
     due-date: 2018-05-20
     due-time: 11:59 PM
     available-date: 2018-05-14
@@ -114,7 +114,7 @@
     week: 2
     week-begin: 2018-05-21
     week-end: 2018-05-27
-    assignment-name: Discover: Interview
+    assignment-name: 'Discover: Interview'
     due-date: 2018-05-27
     due-time: 11:59 PM
     available-date: 2018-05-20
@@ -132,7 +132,7 @@
     week: 2
     week-begin: 2018-05-21
     week-end: 2018-05-27
-    assignment-name: Define: Themes and Insights
+    assignment-name: 'Define: Themes and Insights'
     due-date: 2018-05-27
     due-time: 11:59 PM
     available-date: 2018-05-20
@@ -168,7 +168,7 @@
     week: 3
     week-begin: 2018-05-28
     week-end: 2018-06-03
-    assignment-name: Define: How Might We
+    assignment-name: 'Define: How Might We'
     due-date: 2018-06-03
     due-time: 11:59 PM
     available-date: 2018-05-20
@@ -186,7 +186,7 @@
     week: 3
     week-begin: 2018-05-28
     week-end: 2018-06-03
-    assignment-name: Develop: Brainstorm
+    assignment-name: 'Develop: Brainstorm'
     due-date: 2018-06-03
     due-time: 11:59 PM
     available-date: 2018-05-20
@@ -222,7 +222,7 @@
     week: 4
     week-begin: 2018-06-04
     week-end: 2018-06-10
-    assignment-name: Develop: Storyboad
+    assignment-name: 'Develop: Storyboad'
     due-date: 2018-06-06
     due-time: 11:59 PM
     available-date: 2018-05-20
@@ -240,7 +240,7 @@
     week: 4
     week-begin: 2018-06-04
     week-end: 2018-06-10
-    assignment-name: Develop: MVP Prototype
+    assignment-name: 'Develop: MVP Prototype'
     due-date: 2018-06-10
     due-time: 11:59 PM
     available-date: 2018-05-20
@@ -258,7 +258,7 @@
     week: 5
     week-begin: 2018-06-11
     week-end: 2018-06-17
-    assignment-name: Develop: Test and Review
+    assignment-name: 'Develop: Test and Review'
     due-date: 2018-06-13
     due-time: 11:59 PM
     available-date: 2018-05-20
@@ -276,7 +276,7 @@
     week: 5
     week-begin: 2018-06-11
     week-end: 2018-06-17
-    assignment-name: Develop: Iterate Prototype
+    assignment-name: 'Develop: Iterate Prototype'
     due-date: 2018-06-17
     due-time: 11:59 PM
     available-date: 2018-05-20
@@ -312,7 +312,7 @@
     week: 5
     week-begin: 2018-06-11
     week-end: 2018-06-17
-    assignment-name: Daily Design Journal: Report In
+    assignment-name: 'Daily Design Journal: Report In'
     due-date: 2018-06-17
     due-time: 11:59 PM
     available-date: 2018-05-20
@@ -330,7 +330,7 @@
     week: 6
     week-begin: 2018-06-18
     week-end: 2018-06-24
-    assignment-name: Deliver: Final Prototype
+    assignment-name: 'Deliver: Final Prototype'
     due-date: 2018-06-20
     due-time: 11:59 PM
     available-date: 2018-05-20
@@ -384,7 +384,7 @@
     week: 6
     week-begin: 2018-06-18
     week-end: 2018-06-24
-    assignment-name: Discover: Word-pairs
+    assignment-name: 'Discover: Word-pairs'
     due-date: 2018-06-24
     due-time: 11:59 PM
     available-date: 2018-06-17
@@ -402,7 +402,7 @@
     week: 6
     week-begin: 2018-06-18
     week-end: 2018-06-24
-    assignment-name: Define: Synopsis
+    assignment-name: 'Define: Synopsis'
     due-date: 2018-06-24
     due-time: 11:59 PM
     available-date: 2018-06-17
@@ -420,7 +420,7 @@
     week: 6
     week-begin: 2018-06-18
     week-end: 2018-06-24
-    assignment-name: Develop: Story and Plot
+    assignment-name: 'Develop: Story and Plot'
     due-date: 2018-06-24
     due-time: 11:59 PM
     available-date: 2018-06-17
@@ -438,7 +438,7 @@
     week: 7
     week-begin: 2018-06-25
     week-end: 2018-07-01
-    assignment-name: Develop: Characters
+    assignment-name: 'Develop: Characters'
     due-date: 2018-06-27
     due-time: 11:59 PM
     available-date: 2018-06-17
@@ -474,7 +474,7 @@
     week: 7
     week-begin: 2018-06-25
     week-end: 2018-07-01
-    assignment-name: Develop: Hypertext Narrative Draft 1
+    assignment-name: 'Develop: Hypertext Narrative Draft 1'
     due-date: 2018-06-27
     due-time: 11:59 PM
     available-date: 2018-06-17
@@ -492,7 +492,7 @@
     week: 7
     week-begin: 2018-06-25
     week-end: 2018-07-01
-    assignment-name: Develop: Feedback
+    assignment-name: 'Develop: Feedback'
     due-date: 2018-07-01
     due-time: 11:59 PM
     available-date: 2018-06-17
@@ -510,7 +510,7 @@
     week: 8
     week-begin: 2018-07-02
     week-end: 2018-07-08
-    assignment-name: Deliver: Hypertext Narrative Draft 2
+    assignment-name: 'Deliver: Hypertext Narrative Draft 2'
     due-date: 2018-07-08
     due-time: 11:59 PM
     available-date: 2018-06-17
@@ -582,7 +582,7 @@
     week: 9
     week-begin: 2018-07-09
     week-end: 2018-07-15
-    assignment-name: Discover: Toy Design Research
+    assignment-name: 'Discover: Toy Design Research'
     due-date: 2018-07-15
     due-time: 11:59 PM
     available-date: 2018-07-08
@@ -600,7 +600,7 @@
     week: 9
     week-begin: 2018-07-09
     week-end: 2018-07-15
-    assignment-name: Discover: Resources
+    assignment-name: 'Discover: Resources'
     due-date: 2018-07-15
     due-time: 11:59 PM
     available-date: 2018-07-08
@@ -618,7 +618,7 @@
     week: 9
     week-begin: 2018-07-09
     week-end: 2018-07-15
-    assignment-name: Discover: Modular Design Research
+    assignment-name: 'Discover: Modular Design Research'
     due-date: 2018-07-15
     due-time: 11:59 PM
     available-date: 2018-07-08
@@ -654,7 +654,7 @@
     week: 10
     week-begin: 2018-07-16
     week-end: 2018-07-22
-    assignment-name: Define: Product Pitch
+    assignment-name: 'Define: Product Pitch'
     due-date: 2018-07-22
     due-time: 11:59 PM
     available-date: 2018-07-08
@@ -672,7 +672,7 @@
     week: 10
     week-begin: 2018-07-16
     week-end: 2018-07-22
-    assignment-name: Develop: Instructions
+    assignment-name: 'Develop: Instructions'
     due-date: 2018-07-22
     due-time: 11:59 PM
     available-date: 2018-07-08
@@ -690,7 +690,7 @@
     week: 10
     week-begin: 2018-07-16
     week-end: 2018-07-22
-    assignment-name: Develop: Prototyping
+    assignment-name: 'Develop: Prototyping'
     due-date: 2018-07-22
     due-time: 11:59 PM
     available-date: 2018-07-08
@@ -726,7 +726,7 @@
     week: 11
     week-begin: 2018-07-23
     week-end: 2018-07-29
-    assignment-name: Develop: Test
+    assignment-name: 'Develop: Test'
     due-date: 2018-07-29
     due-time: 11:59 PM
     available-date: 2018-07-08
@@ -744,7 +744,7 @@
     week: 12
     week-begin: 2018-07-30
     week-end: 2018-08-05
-    assignment-name: Develop: Iterate
+    assignment-name: 'Develop: Iterate'
     due-date: 2018-08-01
     due-time: 11:59 PM
     available-date: 2018-07-08
@@ -780,7 +780,7 @@
     week: 12
     week-begin: 2018-07-30
     week-end: 2018-08-05
-    assignment-name: Deliver: Open Design
+    assignment-name: 'Deliver: Open Design'
     due-date: 2018-08-05
     due-time: 11:59 PM
     available-date: 2018-07-08

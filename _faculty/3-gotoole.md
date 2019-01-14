@@ -3,9 +3,13 @@ name: Greg O'Toole
 titles: [Faculty]
 email: gto1@psu.edu
 image-url: ../assets/img/greg_brain.jpg
-lead-faculty: 0
-role: College of Information Sciences & Technology	
-published: yes
+faculty-type: lead
+display-order: 3
+role: College of Information Sciences & Technology
+role: [Lead Faculty, Instructor]
+college: College of Information Sciences and Technology	
+education: []	
+published: true
 ---
 Dr. Greg O’Toole, Ph.D. is a Senior Lecturer in the College of Information Sciences and Technology at Penn State University where he focuses on effective creative expression using open source technologies and critical approaches to media studies. Greg has been working on the web since 1994, effectively building sustainable web ecosystems for a globally diverse range of users and clients.
 

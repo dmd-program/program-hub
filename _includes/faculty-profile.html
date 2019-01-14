@@ -1,16 +1,34 @@
-{% assign sorted = (site.faculty | sort:'lead-faculty') %}
+{% assign sorted = (site.faculty | where: 'published', 'true' | sort:'display-order') %}
 {% for member in sorted %}
+{% if member.faculty-type == 'lead' %}
 <div class="row faculty">    
 		<div class="small-12 medium-3 large-4 columns">
         	<img class="thumbnail" src="{{ member.image-url }}" />
       	</div>
       	<div class="small-12 medium-9 large-8 columns">
-	        <h3>{{ member.name }}</h3>
+			{% if member.name != '' %}
+			<h3>{{ member.name }}</h3>
+			{% endif%}
 	        <p class="faculty-info">
-	        	{{ member.role }}<br>
-	        	{{ member.email }}
-	        </p>
-	        <p>{{ member.content }}</p>
+				{% assign roles = member.role %}
+				{% for role in roles %}
+				<span class="highlight black">{{ role }}</span>
+				{% if forloop.last == true %}
+				<br>
+				{% endif %}
+            	{% endfor %}
+				{% if member.college != '' %}
+					{{ member.college }}<br>
+				{% endif%}
+				{% if member.email != '' %}
+					{{ member.email }}
+				{% endif%}
+			</p>
+			{% if member.content != '' %}
+			<p>{{ member.content }}</p>
+			{% endif%}
         </div>
 </div> 
+{% endif %}
+
 {% endfor %}
