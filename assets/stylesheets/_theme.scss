@@ -635,3 +635,45 @@ ul.offering-filters {
 	display: inline-block;
 	border:none;
 }
+
+// exhibitions
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,700');
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700');
+$roboto-mono: 'Roboto Mono', monospace;
+$exhibition-01-font:"libre baskerville", Georgia, serif;
+
+hr.exhibition-01, hr.exhibition-02 {
+	border-bottom: 4px solid #000000;
+}
+.exhibition-nav {
+	padding-top:1rem;
+}
+.exhibition-content {
+	padding-right:1rem;
+}
+.exhibition-header {
+	padding-top:6rem;
+}
+h1.exhibition-01, h1.exhibition-02  {
+	font-family: $roboto-mono;
+	font-size: 2rem;
+	font-weight:700;
+	text-transform: uppercase;
+}
+.exhibition-01, .exhibition-02 {
+	&--title {
+		font-family: $roboto-mono;
+		font-size: 1.6rem;
+		font-weight:700;
+		text-transform: uppercase;
+	}
+	&--name {
+		font-family: $roboto-mono;
+		font-size: 0.9rem;
+		font-weight:700;
+	}
+	&--content {
+		font-family: $exhibition-01-font;
+		font-size: 0.9rem;
+	}
+}

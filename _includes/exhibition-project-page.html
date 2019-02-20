@@ -1,6 +1,6 @@
 <div class="row column">
-        <hr>
-        <a href="{{ site.baseurl }}/exhibitions/{{ page.exhibition | slugify }}">← Back  to {{ page.exhibition }}</a>
+        <a href="{{ site.baseurl }}/private/exhibitions/{{ page.exhibition | slugify }}">← Back  to {{ page.exhibition }}</a>
+        <!-- <a href="{{ site.baseurl }}/private/{{ page.exhibition | slugify }}">← Back  to {{ page.exhibition }}</a> -->
         <hr>
         <h1>Title of student project.</h1>
         <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla.</p>
@@ -12,6 +12,7 @@
         </div>
         <div class=" column small-12 medium-6 large-7">
             <div class="row small-up-2">
+                    {% include projects.html projects=site.projects exhibition=page.exhibition %}
                 <div class="column">
                     <img class="thumbnail" src="http://placehold.it/1100x550">
                     <h5>My Site</h5>

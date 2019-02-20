@@ -1,0 +1,63 @@
+{% if include.id %}
+  {% assign gallery = page[include.id] %}
+{% else %}
+  {% assign gallery = page.gallery %}
+{% endif %}
+
+
+{% if include.size == "1" %}
+  {% assign gallery_layout = '' %}
+{% elsif include.size == "2" %}
+  {% if gallery.size >= 2 %}
+    {% assign gallery_layout = 'half' %}
+  {% else %}
+    {% assign gallery_layout = '' %}
+  {% endif %}
+{% elsif include.size == "3"  %}
+  {% if gallery.size >= 3 %}
+    {% assign gallery_layout = 'third' %}
+  {% elsif gallery.size == 2 %}
+    {% assign gallery_layout = 'half' %}
+  {% else %}
+    {% assign gallery_layout = '' %}
+  {% endif %}
+{% elsif !include.size  %}
+  {% if gallery.size == 2  %}
+    {% assign gallery_layout = 'half' %}
+  {% elsif gallery.size >= 3  %}
+    {% assign gallery_layout = 'third' %}
+  {% else %}
+    {% assign gallery_layout = '' %}
+  {% endif %}
+{% else %}
+  {% assign gallery_layout = '' %}
+{% endif %}
+
+
+
+  {% for img in gallery %}
+  <div class="column">
+    {% if img.url %}
+        <img class="thumbnail" src=
+          {% if img.image_path contains "://" %}
+            "{{ img.image_path }}"
+          {% else %}
+            "{{ img.image_path | absolute_url }}"
+          {% endif %}
+          alt="{% if img.alt %}{{ img.alt }}{% endif %}">
+      </a>
+    {% else %}
+      <img class="thumbnail" src=
+        {% if img.image_path contains "://" %}
+          "{{ img.image_path }}"
+        {% else %}
+          "{{ img.image_path | absolute_url }}"
+        {% endif %}
+        alt="{% if img.alt %}{{ img.alt }}{% endif %}">
+    {% endif %}
+  
+  {% if img.alt %}
+    <h5>{{ img.alt }}</h5>
+  {% endif %}
+  </div>
+{% endfor %}

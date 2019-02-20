@@ -1,0 +1,29 @@
+---
+layout: default
+---
+<div class="{{ page.exhibition | slugify }} exhibition-nav row column">
+  <a href="{{ site.baseurl }}/private/{{ page.exhibition | slugify }}">← Back</a>
+  <!-- <a href="{{ site.baseurl }}/exhibitions/{{ page.exhibition | slugify }}">← Back  to {{ page.exhibition }}</a> -->
+  <!-- <hr class="{{ page.exhibition | slugify }}"> -->
+  
+</div>
+<div class="row exhibition-header">
+  <div class="column small-12 medium-6 large-7">
+  </div>
+</div>
+<div class="row">
+  <article class="theme-left-col column small-12 medium-6 large-5 {{ page.exhibition | slugify }}">
+    <p class="{{ page.exhibition | slugify }}--title">{{ page.title }}</p>
+    <p class="{{ page.exhibition | slugify }}--name">{{ page.name }}</p> 
+    <hr>
+    <p>DOWNLOAD: <a href="{{ site.baseurl }}assets/projects/{{ page.title }}/{{ page.download }}"><i class="fa fa-arrow-down"></i> file.pdf</a></p>
+    <hr>
+    <div class="{{ page.exhibition | slugify }}--content exhibition-content">{{ page.content }}</div>
+  </article>
+  <aside class=" column small-12 medium-6 large-7">
+      <div class="row small-up-2">
+          {% include gallery-advanced style=page.gallerymode size="1" caption="" %}
+          </div>  
+      </div>
+    </aside>
+</div>

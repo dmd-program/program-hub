@@ -60,6 +60,7 @@ collections:
   pathways:
   exhibitions:
     output: true
+    permalink: /private/:title
   projects:
     output: true
   polygons:
