@@ -3,7 +3,8 @@
     <div class="exhibition-nav columns small-12">
       <a href="{{ site.baseurl }}/exhibitions">⟵ View all exhibitions</a> | <a href="{{ site.baseurl }}/courses/{{page.course | slugify | remove: '-' }}">DMD 300: Digital Multimedia Design Studio</a>
       <hr>
-      <!-- <h1 class="page-heading">{{include.exhibition-title}}</h1> -->
+      
+      <!-- ORBIT SLIDER: https://foundation.zurb.com/sites/docs/v/5.5.3/components/orbit.html -->
       <!-- <div class="row columns">
           <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
             <ul class="orbit-container">
@@ -24,6 +25,8 @@
             </ul>
           </div>
         </div> -->
+
+
         <div class="row">
           <div class="column small-8 small-push-2 medium-6 medium-push-3 text-center {{ page.exhibition | slugify }} exhibition-header">
             <img class="exhibition-title-img" src="{{ site.baseurl }}{{page.exhibition-image}}" alt="abstract image that represent the exhibition">
