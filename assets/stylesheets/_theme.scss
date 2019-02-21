@@ -655,7 +655,7 @@ hr.exhibition-01, hr.exhibition-02 {
 	padding-top:1rem;
 }
 .card--medium {
- max-width: 400px;
+ max-width: 420px;
  background:#fff;
 }
 .exhibition-01.exhibition-card, .exhibition-01-project-theme.exhibition-card {
@@ -672,7 +672,7 @@ hr.exhibition-01, hr.exhibition-02 {
 	-ms-transition: box-shadow 0.3s ease-in 0s;
 	transition: box-shadow 0.3s ease-in 0s; 
 	
-	&:hover {
+	&:hover, &:focus {
 		-webkit-box-shadow: 16px 16px 0px 0px rgba(0,0,0,0.2);
 		-moz-box-shadow: 16px 16px 0px 0px rgba(0,0,0,0.2);
 		box-shadow: 16px 16px 0px 0px rgba(0,0,0,0.2);
@@ -691,6 +691,7 @@ hr.exhibition-01, hr.exhibition-02 {
 		display: block;
 		font-size: 1.25rem;
 		padding: 0.5rem 1rem 0;
+		text-transform: uppercase;
 	}
 	&--description {
 		display: block;
