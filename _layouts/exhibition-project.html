@@ -17,6 +17,9 @@ layout: default
     <p class="{{ page.exhibition | slugify }}--name">{{ page.name }}</p> 
     <hr>
     <p>DOWNLOAD: <a href="{{ site.baseurl }}assets/projects/{{ page.title }}/{{ page.download }}"><i class="fa fa-arrow-down"></i> file.pdf</a></p>
+    {% if page.project-external-link %}
+    <p>PROJECT SITE: <a href="{{ page.project-external-link }}"><i class="fa fa-external-link"></i> {{ page.project-external-link }}</a></p>
+    {% endif %}
     <hr>
     <div class="{{ page.exhibition | slugify }}--content exhibition-content">{{ page.content }}</div>
   </article>
