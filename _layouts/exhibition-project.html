@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+<div class="{{page.url | remove: 'private/' | remove: page.slug | slugify }}-style">
 <div class="{{ page.exhibition | slugify }} exhibition-nav row column">
   <a href="{{ site.baseurl }}/private/exhibitions/{{ page.exhibition | slugify }}">← Back</a>
   <!-- <a href="{{ site.baseurl }}/exhibitions/{{ page.exhibition | slugify }}">← Back  to {{ page.exhibition }}</a> -->
@@ -29,4 +30,5 @@ layout: default
           </div>  
       </div>
     </aside>
+</div>
 </div>
