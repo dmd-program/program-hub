@@ -52,3 +52,9 @@ layout: main
   {% include offerings-list.html offerings=page.offerings %}
 {% endunless %}
 {{content}}
+
+<div class="row">
+    <div class="columns small-8 small-push-2 foot-spacing head-spacing">
+        {% include current-exhibition-list.html course=page.number%}
+    </div>
+</div>
