@@ -629,6 +629,9 @@ table.course-schedule {
 .bg-color-gray {
 	background-color:#eeeeee;
 }
+.bg-color-mid-gray {
+	background-color:#ccc;
+}
 ul.offering-filters {
 	margin: 0 auto;
     text-align: center;
@@ -650,6 +653,7 @@ hr.exhibition-01, hr.exhibition-02 {
 }
 .card--medium {
  max-width: 400px;
+ background:#fff;
 }
 .exhibition-01.exhibition-card, .exhibition-01-project-theme.exhibition-card {
 	border:4px solid #000;
@@ -720,4 +724,8 @@ h1.exhibition-01, h1.exhibition-02  {
 		font-family: $exhibition-01-font;
 		font-size: 0.9rem;
 	}
+}
+
+hr.dark {
+	border-color: #000;
 }
