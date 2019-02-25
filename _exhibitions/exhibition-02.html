@@ -1,10 +1,17 @@
 ---
 layout: default
-title: Exhibition 02
-class: exhibition-02
+title: Capstone Project Exhibition
+class: [exhibition-02 exhibition-02-project-theme]
+year: 2019
+semester: Fall
+course: 'DMD 400'
+current: false;
 exhibition: exhibition 02
-card-image-url: https://unsplash.it/540/360/?image=99
-card-description: This is another exhibition writeup.
-published: true
+exhibition-theme: exhibition 02
+description: "The Senior Capstone Exhibition in an online exhibition that highlights work from students enrolled in DMD 400: Digital Multimedia Design Capstone."
+exhibition-image: '/assets/exhibitions/exhibition-01/logo/logo4.png'
+card-image-url: '/assets/exhibitions/exhibition-01/logo/logo4.png'
+card-description: 'DMD 400: Fall 2019'
+permalink: /:collection/:title/
 ---
-{% include exhibition-project-list.html exhibition=page.exhibition exhibition-title=page.title %}
+{% include exhibition-project-list.html exhibition-theme=page.exhibition-theme exhibition=page.exhibition exhibition-title=page.title %}

@@ -3,7 +3,12 @@ layout: default
 ---
 <div class="{{page.url | remove: 'private/' | remove: page.slug | slugify }}-style">
 <div class="{{ page.exhibition | slugify }} exhibition-nav row column">
+  
+  {% if page.private == true %}
   <a href="{{ site.baseurl }}/private/exhibitions/{{ page.exhibition | slugify }}">← Back</a>
+  {% else %}
+  <a href="{{ site.baseurl }}/exhibitions/{{ page.exhibition | slugify }}">← Back</a>
+  {% endif %}
   <!-- <a href="{{ site.baseurl }}/exhibitions/{{ page.exhibition | slugify }}">← Back  to {{ page.exhibition }}</a> -->
   <!-- <hr class="{{ page.exhibition | slugify }}"> -->
   

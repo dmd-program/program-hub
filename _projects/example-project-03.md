@@ -1,13 +1,13 @@
 ---
 layout: exhibition-project
-title: A Second Design Project Title
+title: A Capstone Design Project Title
 card-image-url: /assets/projects/19SP_DMD300/student-name/300.jpg
-class: exhibition-01-project-theme
-name: Samantha Doe
-permalink: /exhibition-01/projects/:name/
-exhibition: exhibition 01
+class: exhibition-02-project-theme
+name: Robert Ross
+exhibition: exhibition 02
 private: false
 private-list: false
+permalink: /exhibition-02/projects/:name/
 download: file.pdf
 instructor: Michael Collins
 category: webprojects

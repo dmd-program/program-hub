@@ -54,9 +54,7 @@ layout: main
 {% endunless %}
 {{content}}
 
-{% assign items = site.exhibitions | where:"course", page.number %}
-{% for exhibition in items %}
-{% if exhibition %}
+
 <div class="row">
     <div class="columns small-8 small-push-2 foot-spacing head-spacing">
         <h3 class="text-center">Student work</h3>
@@ -64,5 +62,3 @@ layout: main
         {% include current-exhibition-list.html course=page.number align=center%}
     </div>
 </div>
-{% endif %}
-{% endfor %}

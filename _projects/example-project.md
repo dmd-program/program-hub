@@ -5,8 +5,9 @@ card-image-url: /assets/projects/19SP_DMD300/student-name/300.jpg
 class: exhibition-01-project-theme
 name: Jonathan Doe
 private: true
+private-list: false
 permalink: /private/exhibition-01/projects/:name/
-exhibition: exhibition 01
+exhibition: exhibition 01 private
 download: file.pdf
 instructor: Michael Collins
 category: webprojects
