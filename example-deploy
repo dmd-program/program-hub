@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Basic usage:
+## Rename this file to "deploy"
+## To deploy the site to a server with SCP or RSYNC, type './deploy'
+## RSYNC is recommended
+ 
+# SCP:
+## Syncs all files regardless of whether they changed or not
+## to set up SCP, uncomment following line
+# bundle exec jekyll build --config=_config.yml,_config-prod.yml && scp -P PORT -rp _site/* USER@SERVERIP:/var/www/html/
+
+## RSYNC: with checksum (-z) flag evaluates checksum and uploads only changed files
+## To use rsync with production server, uncomment following line
+# bundle exec jekyll build --config=_config.yml,_config-prod.yml && rsync -crz -v --delete-after --rsh='ssh -pPORT' _site/ USER@SERVERIP:/var/www/html/
