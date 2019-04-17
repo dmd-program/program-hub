@@ -4,6 +4,8 @@
 To manually build for git pages: ```bundle exec jekyll build```
 
 ## Local Development
+See this page to install Jekyll for Github Pages development: https://help.github.com/en/articles/setting-up-your-github-pages-site-locally-with-jekyll
+
 To develop locally: ```bundle exec jekyll serve```  
 Follow instructions in terminal
 
