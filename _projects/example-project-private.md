@@ -4,13 +4,13 @@ title: A Second Design Project Title
 card-image-url: /assets/projects/19SP_DMD300/student-name/300.jpg
 class: exhibition-01-project-theme
 name: Samantha Doe
-permalink: /exhibition-01/projects/:name/
-exhibition: exhibition 01
-private: false
-private-list: false
-download: file.pdf
-instructor: Michael Collins
-category: webprojects
+permalink: private/exhibition-01/projects/:name/
+exhibition: exhibition 01 #must match the exhibition file name for the back button to work.
+private: true #Set true if the exhibition is private. This makes the back button url work.
+private-list: true #Is this project inlcuded in a public exhibition, but using a private URL to protect the work? If yes, set true, will ask for a login before viewing.
+download: file.pdf #Project download file
+instructor: Michael Collins #name of instructor for the semester
+category: webprojects #tags
 gallerymode: standard #configures image gallery on exhibition page
 year: 2019
 card-description: This design project focuses on a futures topic explored through digital imagery. 
