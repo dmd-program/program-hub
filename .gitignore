@@ -5,3 +5,4 @@ static
 .env
 deploy
 _projects/exhibitions/*
+assets/projects/*
