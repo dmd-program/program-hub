@@ -1,0 +1,38 @@
+
+
+
+
+
+
+{% capture video_id %}{{ include.id }}{% endcapture %}
+{% capture video_provider %}{{ include.provider }}{% endcapture %}
+
+<!-- Courtesy of embedresponsively.com //-->
+<div class="responsive-video-container">
+{% if video_provider == "local" %}
+{% if page.videos %}
+  {% assign videos = page.videos %}
+{% endif %}
+{% for vid in videos %}
+    <video width="100%" height="auto" controls>
+            <source src="{{ site.baseurl }}{{ vid.src-webm }}" type="video/webm">
+        <source src="{{ site.baseurl }}{{ vid.src-mp4 }}" type="video/mp4">
+       
+         
+    Your browser does not support the video tag.
+    </video> 
+    {% endfor %}
+{% elsif video_provider == "vimeo" %}
+  {% for vid in videos %}
+    <iframe src="https://player.vimeo.com/video/{{ vimeo }}?dnt=true" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+  {% endfor %}
+{% elsif video_provider == "youtube" %}
+  {% for vid in videos %}
+    <iframe src="https://www.youtube-nocookie.com/embed/{{ youtube }}" frameborder="0" allowfullscreen></iframe>
+  {% endfor %}
+{% elsif video_provider == "google-drive" %}
+  {% for vid in videos %}
+    <iframe src="https://drive.google.com/file/d/{{ googledrive }}/preview" frameborder="0" allowfullscreen></iframe>
+  {% endfor %}
+{% endif %}
+</div>
