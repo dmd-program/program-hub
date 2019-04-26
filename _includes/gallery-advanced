@@ -42,7 +42,7 @@
           {% if img.image_path contains "://" %}
             "{{ img.image_path }}"
           {% else %}
-            "{{ img.image_path | absolute_url }}"
+            "{{ site.baseurl }}/{{ img.image_path }}"
           {% endif %}
           alt="{% if img.alt %}{{ img.alt }}{% endif %}">
       </a>
@@ -51,13 +51,10 @@
         {% if img.image_path contains "://" %}
           "{{ img.image_path }}"
         {% else %}
-          "{{ img.image_path | absolute_url }}"
+          "{{ site.baseurl }}/{{ img.image_path }}"
         {% endif %}
         alt="{% if img.alt %}{{ img.alt }}{% endif %}">
     {% endif %}
-  
-  {% if img.alt %}
-    <h5>{{ img.alt }}</h5>
-  {% endif %}
+
   </div>
 {% endfor %}

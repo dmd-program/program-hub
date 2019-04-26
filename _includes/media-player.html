@@ -8,19 +8,19 @@
 {% capture video_provider %}{{ include.provider }}{% endcapture %}
 
 <!-- Courtesy of embedresponsively.com //-->
-<div class="responsive-video-container">
+
 {% if video_provider == "local" %}
 {% if page.videos %}
   {% assign videos = page.videos %}
 {% endif %}
 {% for vid in videos %}
+<div class="responsive-video-container"></div>
     <video width="100%" height="auto" controls>
-            <source src="{{ site.baseurl }}{{ vid.src-webm }}" type="video/webm">
-        <source src="{{ site.baseurl }}{{ vid.src-mp4 }}" type="video/mp4">
-       
-         
+            <source src="{{ site.baseurl }}/assets/projects/exhibitions/{{page.ex-folder}}/{{page.student-folder}}/{{ vid.src-webm }}" type="video/webm">
+        <source src="{{ site.baseurl }}/assets/projects/exhibitions/{{page.ex-folder}}/{{page.student-folder}}/{{ vid.src-mp4 }}" type="video/mp4">
     Your browser does not support the video tag.
     </video> 
+</div>
     {% endfor %}
 {% elsif video_provider == "vimeo" %}
   {% for vid in videos %}
@@ -35,4 +35,3 @@
     <iframe src="https://drive.google.com/file/d/{{ googledrive }}/preview" frameborder="0" allowfullscreen></iframe>
   {% endfor %}
 {% endif %}
-</div>
