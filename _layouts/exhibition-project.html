@@ -23,34 +23,32 @@ layout: default
     <p class="{{ page.exhibition | slugify }}--name">{{ page.name }}</p> 
     <!-- Project tags -->
     {%- if page.tags -%}
-        <p><span class="project-links-title">Media: </span>{%- assign tags = page.tags -%}{%- for tag in tags -%}
+        <p><span class="project-links-title"></span>{%- assign tags = page.tags -%}{%- for tag in tags -%}
             <span class="highlight black small project-tag">{{ tag }}</span>
         {%- endfor -%}
         </p>
     {% endif %}
 
     <!-- Project external website -->
-    {% if page.project-external-link %}
-    <p><span class="project-links-title"></span>Project Link: </span><a href="{{ page.project-external-link }}"><i class="fa fa-external-link"></i> {{ page.project-external-link | truncate: 20 }}</a></p>
+    {% if page.project-external-link != '' or page.project-external-link != '' or page.production-blog != '' or page.project-doc != '' %}
     <hr>
-    {% else %}
+    {% endif %}
+    {% if page.project-external-link != '' %}
+    <p><span class="project-links-title">Project Link: </span><a href="{{ page.project-external-link }}"><i class="fa fa-external-link"></i> {{ page.project-external-link | truncate: 20 }}</a></p>
+    {% endif %}
 
     <!-- Project files download -->
-    <p><span class="project-links-title">Project: </span><a href="{{ site.baseurl }}/assets/projects/exhibitions/{{ page.ex-folder }}/{{ page.student-folder }}/{{ page.project-download-link }}"><i class="fa fa-arrow-down"></i> {{ page.project-download-link | truncate: 20 }}</a></p>
-    {% else %}
+    {% if page.project-download-link != '' %}
+    <p><span class="project-links-title">Project Files: </span><a href="{{ site.baseurl }}/assets/projects/exhibitions/{{ page.ex-folder }}/{{ page.student-folder }}/{{ page.project-download-link }}"><i class="fa fa-arrow-down"></i> {{ page.project-download-link | truncate: 20 }}</a></p>
+
     {% endif %}
 
-    
-
-    {% if page.production-blog or page.project-doc %}
-    <hr>
-    {% endif %}
-    {% if page.project-doc %}
+    {% if page.project-doc != '' %}
     <!-- Project documentation download -->
-    <p><span class="project-links-title">Documentation: </span><a href="{{ page.project-doc }}"><i class="fa fa-arrow-down"></i> {{ page.project-doc | truncate: 20 }}</a></p>
+    <p><span class="project-links-title">Documentation: </span><a href="{{ site.baseurl }}/assets/projects/exhibitions/{{ page.ex-folder }}/{{ page.student-folder }}/{{ page.project-doc }}"><i class="fa fa-arrow-down"></i> {{ page.project-doc | truncate: 20 }}</a></p>
     {% endif %}
 
-    {% if page.production-blog %}
+    {% if page.production-blog != '' %}
     <!-- Production blog link -->
     <p><span class="project-links-title">Production Blog: </span><a href="{{ page.production-blog }}"><i class="fa fa-external-link"></i> {{ page.production-blog | truncate: 20 }}</a></p>
     {% endif %}
@@ -62,7 +60,7 @@ layout: default
   <aside class=" column small-12 medium-6 large-7">
       <div class="row small-up-2">
         {% include media-player.html id="" provider="local" %}
-        {% include gallery-advanced style=page.gallerymode size="1" caption="" %}
+        {% include gallery-advanced size="2" caption="" class="image-popup" %}
           </div>  
       </div>
     </aside>

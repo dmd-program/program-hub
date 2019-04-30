@@ -31,8 +31,13 @@
           <div class="column small-8 small-push-2 medium-6 medium-push-3 text-center {{ page.exhibition | slugify }} exhibition-header">
             <img class="exhibition-title-img" src="{{ site.baseurl }}{{page.exhibition-image}}" alt="abstract image that represent the exhibition">
             <h1 class="{{ page.exhibition | slugify }}">{{page.title}}</h1>
+
+            <p class=""><span class="highlight black">{{page.semester}} {{page.year}}</span></p>
             <p class="text-left">{{page.description}}</p>
-            <!-- <a href="#" class="button large">Learn More</a>
+            <!-- {{ if page.alt-exhibition-link != 'disable' }}
+              <p class="text-left">{{page.alt-exhibition}}</p> <a href="{{ site.baseurl }}{{page.alt-exhibition-link}}">View PSU only exhibition here.</a>
+            {{ endif }} -->
+              <!-- <a href="#" class="button large">Learn More</a>
             <a href="#" class="button large hollow">Learn Less</a> -->
           </div>
         </div>
@@ -41,7 +46,7 @@
     <div class="columns small-12">
         <div class="row">
             <div class="columns small-8 small-push-2 foot-spacing">
-      {% include projects.html exhibition-theme=include.exhibition-theme projects=site.projects exhibition=page.exhibition %}
+      {% include projects.html exhibition-theme=include.exhibition-theme projects=site.projects exhibition=page.exhibition exhibition-private=include.exhibition-private %}
         </div>
       </div>
     </div>

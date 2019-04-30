@@ -34,10 +34,17 @@
 {% endif %}
 
 
-
   {% for img in gallery %}
-  <div class="column">
     {% if img.url %}
+    <div class="column">
+    <a class="{{ include.class }}" href=
+        {% if img.url contains "://" %}
+          "{{ img.url }}"
+        {% else %}
+          "{{ img.url | relative_url }}"
+        {% endif %}
+        {% if img.title %}title="{{ img.title }}"{% endif %}
+      >
         <img class="thumbnail" src=
           {% if img.image_path contains "://" %}
             "{{ img.image_path }}"
@@ -56,5 +63,5 @@
         alt="{% if img.alt %}{{ img.alt }}{% endif %}">
     {% endif %}
 
-  </div>
+</div>
 {% endfor %}

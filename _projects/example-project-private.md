@@ -18,6 +18,10 @@ semester: Spring
 card-description: This design project focuses on a futures topic explored through digital imagery. #appears on exhibition index card
 project-external-link: https://google.com
 project-download-link: /assets/projects/19sp_dmd300/student-name/file.pdf
+# project-external-link: '' #http://project-name.com
+# project-download-link: '' #file.ext
+# project-doc: '' #file.pdf
+# production-blog: ''  #http://blogger.com
 header:
   image: http://via.placeholder.com/1200x250
   teaser: http://via.placeholder.com/1200x250

@@ -14,7 +14,9 @@ $(document).foundation();
     $win.on('load', function(){
         // document is fully loaded
 
-
+        // https://dimsemenov.com/plugins/magnific-popup/documentation.html
+       $('.image-popup').magnificPopup({type:'image'});
+       
         
         $( "#pathway-accordion li.accordion-group-tab, #curriculum-accordion li.accordion-group-tab" ).click(function(){
 

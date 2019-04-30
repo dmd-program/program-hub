@@ -5,15 +5,18 @@ class: [exhibition-01 exhibition-01-project-theme]
 year: 2019
 semester: Spring
 course: 'DMD 300'
-current: true
-alt-exhibition-link: disable
+current: false
 exhibition: exhibition 01
 exhibition-theme: exhibition 01
 description: "The Futures Project Exhibition in an online exhibition that highlights work from students enrolled in DMD 300: Digital Multimedia Design Studio."
+alt-exhibition: "To see the full class project listing, you must have a Penn State access accouunt. Please visit the full exhibition."
+alt-exhibition-link: /private/exhibitions/exhibition-01/
 exhibition-image: '/assets/exhibitions/exhibition-01/logo/logo4.png'
 card-image-url: '/assets/exhibitions/exhibition-01/logo/logo4.png'
 card-description: 'DMD 300: Spring 2019'
-private: true
-permalink: /private/:collection/:title/
+private: false
+permalink: /:collection/:title/
+published: false
 ---
+
 {% include exhibition-project-list.html exhibition-theme=page.exhibition-theme exhibition=page.exhibition exhibition-title=page.title exhibition-private=page.private %}

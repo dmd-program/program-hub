@@ -14,8 +14,8 @@
   {% assign videos = page.videos %}
 {% endif %}
 {% for vid in videos %}
-<div class="responsive-video-container"></div>
-    <video width="100%" height="auto" controls>
+<div class="responsive-video-container">
+    <video width="100%" height="auto" poster="{{ site.baseurl }}/assets/projects/exhibitions/{{page.ex-folder}}/{{page.student-folder}}/{{vid.poster-img}}" controls>
             <source src="{{ site.baseurl }}/assets/projects/exhibitions/{{page.ex-folder}}/{{page.student-folder}}/{{ vid.src-webm }}" type="video/webm">
         <source src="{{ site.baseurl }}/assets/projects/exhibitions/{{page.ex-folder}}/{{page.student-folder}}/{{ vid.src-mp4 }}" type="video/mp4">
     Your browser does not support the video tag.
