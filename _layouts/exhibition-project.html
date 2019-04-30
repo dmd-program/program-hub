@@ -21,23 +21,42 @@ layout: default
   <article class="theme-left-col column small-12 medium-6 large-5 {{ page.exhibition | slugify }}">
     <p class="{{ page.exhibition | slugify }}--title">{{ page.title }}</p>
     <p class="{{ page.exhibition | slugify }}--name">{{ page.name }}</p> 
-    {% if page.project-download-link %}
+    <!-- Project tags -->
+    {%- if page.tags -%}
+        <p><span class="project-links-title">Media: </span>{%- assign tags = page.tags -%}{%- for tag in tags -%}
+            <span class="highlight black small project-tag">{{ tag }}</span>
+        {%- endfor -%}
+        </p>
+    {% endif %}
+
+    <!-- Project external website -->
+    {% if page.project-external-link %}
+    <p><span class="project-links-title"></span>Project Link: </span><a href="{{ page.project-external-link }}"><i class="fa fa-external-link"></i> {{ page.project-external-link | truncate: 20 }}</a></p>
     <hr>
-    <p>DOWNLOAD: <a href="{{ site.baseurl }}/assets/projects/exhibitions/{{ page.ex-folder }}/{{ page.student-folder }}/{{ page.project-download-link }}"><i class="fa fa-arrow-down"></i> {{ page.project-download-link | truncate: 20 }}</a></p>
+    {% else %}
+
+    <!-- Project files download -->
+    <p><span class="project-links-title">Project: </span><a href="{{ site.baseurl }}/assets/projects/exhibitions/{{ page.ex-folder }}/{{ page.student-folder }}/{{ page.project-download-link }}"><i class="fa fa-arrow-down"></i> {{ page.project-download-link | truncate: 20 }}</a></p>
     {% else %}
     {% endif %}
-    {% if page.production-blog %}
-    <p>PRODUCTION BLOG: <a href="{{ page.production-blog }}"><i class="fa fa-external-link"></i> {{ page.production-blog | truncate: 20 }}</a></p>
+
+    
+
+    {% if page.production-blog or page.project-doc %}
+    <hr>
     {% endif %}
     {% if page.project-doc %}
-    <p>PROJECT DOC: <a href="{{ page.project-doc }}"><i class="fa fa-arrow-down"></i> {{ page.project-doc | truncate: 20 }}</a></p>
+    <!-- Project documentation download -->
+    <p><span class="project-links-title">Documentation: </span><a href="{{ page.project-doc }}"><i class="fa fa-arrow-down"></i> {{ page.project-doc | truncate: 20 }}</a></p>
     {% endif %}
-    {% if page.project-external-link %}
-    <p>PROJECT SITE: <a href="{{ page.project-external-link }}"><i class="fa fa-external-link"></i> {{ page.project-external-link | truncate: 20 }}</a></p>
-    <hr>
-    {% else %}
-    <hr>
+
+    {% if page.production-blog %}
+    <!-- Production blog link -->
+    <p><span class="project-links-title">Production Blog: </span><a href="{{ page.production-blog }}"><i class="fa fa-external-link"></i> {{ page.production-blog | truncate: 20 }}</a></p>
     {% endif %}
+<hr>
+    
+    
     <div class="{{ page.exhibition | slugify }}--content exhibition-content">{{ page.content }}</div>
   </article>
   <aside class=" column small-12 medium-6 large-7">

@@ -96,6 +96,12 @@ span.highlight{
 	&.green {
 		background:#4CAF50;
 	}
+	&.small {
+		font-size: 0.7rem;
+		padding: 0.25rem 0.5rem;
+		font-style: italic;
+		font-weight: 600;
+	}
 }
 .header {
   padding: 10rem 0;
@@ -743,8 +749,9 @@ h1.exhibition-01, h1.exhibition-02  {
 hr.dark {
 	border-color: #000;
 }
-
-.responsive-video-container {
-	padding: 1rem;
-	margin-bottom:2rem;
+.project-tag {
+	margin:0 0.25rem;
+}
+.project-links-title {
+	text-transform: uppercase;
 }
