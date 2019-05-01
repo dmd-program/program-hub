@@ -12,4 +12,4 @@
 
 ## RSYNC: with checksum (-z) flag evaluates checksum and uploads only changed files
 ## To use rsync with production server, uncomment following line
-# bundle exec jekyll build --config=_config.yml,_config-prod.yml && rsync -crz -v --delete-after --rsh='ssh -p PORT' _site/ USER@SERVERIP:/var/www/html/
+# bundle exec jekyll build --config=_config.yml,_config-prod.yml && rsync -crz -v --delete-after --progress --rsh='ssh -p PORT' _site/ USER@SERVERIP:/var/www/html/
