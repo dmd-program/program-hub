@@ -15,7 +15,7 @@
 	          <li id="courseFilter">
                    
                        <a href="#" data-filter="*" class="current" tabindex="0">All Courses</a>
-                       <a href="#" data-filter=".art" tabindex="0">ART</a>
+                       <a href="#" data-filter=".dart" tabindex="0">DART</a>
                        <a href="#" data-filter=".comm" tabindex="0">COMM</a>
                        <a href="#" data-filter=".ist" tabindex="0">IST</a>
                        <a href="#" data-filter=".other" tabindex="0">Other</a>
@@ -27,9 +27,9 @@
 	  			<!-- Set writeheaderbool = true -->
   				{% assign writeheaderbool = true %}
 	  			{% for course in sorted %}
-		  			{% if course.pathway-list contains pathway.title and course.number contains 'ART' %}
+		  			{% if course.pathway-list contains pathway.title and course.number contains 'DART' %}
 		  			
-		  				<li class="course-item art">
+		  				<li class="course-item dart">
 			  				
 						        <h3> {{ course.number }} </h3>
 						        <h4> {{ course.title }} </h4>

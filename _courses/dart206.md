@@ -1,11 +1,11 @@
 ---
 title: The Art of Web Design
-number: ART 203
+number: DART 206 (ART 203)
 credits: 3
 academic-home: Arts & Arch
 description:  
 course-type: [Additional]
 bulletin-link: https://bulletins.psu.edu/search/?search=%22art+203%22
 pathway-list: [Generalist, Digital Design, Interactive Media Developer]
-published: false
+published: true
 ---

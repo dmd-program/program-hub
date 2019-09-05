@@ -2,8 +2,9 @@
 name: Gabriel Ibias
 titles: [Faculty]
 email: xxx123@psu.edu
-image-url:
+image-url: ../assets/img/gibias-bio.jpg
 faculty-type: instructor
+faculty-display-level: 3
 display-order: 4
 role: [Instructor]
 college: School of Visual Arts, College of Arts and Architecture	

@@ -4,11 +4,13 @@ titles: [Faculty]
 email: ean13@psu.edu
 image-url: ../assets/img/eduardo_navas.jpg
 faculty-type: instructor
+faculty-display-level: 3
 display-order: 5
 role: 	[Instructor]
 college: School of Visual Arts, College of Arts and Architecture	
 education: ['Ph.D., University of California','M.F.A., California Institute of the Arts','B.F.A., Otis College of Art and Design']
-published: false
+published: true
+courses-taught: [ART 211y]
 ---
 Eduardo Navas is the author of Remix Theory: The Aesthetics of Sampling ( Springer, 2012), Spate: A Navigational Theory of Networks (INC, 2016), as well as Art Media Design and Postproduction: Open Guidelines on Appropriation and Remix (forthcoming: Focal/Routledge, 2018). He is co-editor of The Routledge Companion to Remix Studies (Routledge, 2015), and Keywords in Remix Studies (Routledge 2017). He implements methodologies of cultural analytics and digital humanities to research the crossover of art and media in culture. His production includes art & media projects, critical texts, and curatorial projects. He has presented and lectured about his work and research internationally.
 

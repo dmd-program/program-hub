@@ -1,34 +1,97 @@
 {% assign sorted = (site.faculty | where: 'published', 'true' | sort:'display-order') %}
 {% for member in sorted %}
-{% if member.faculty-type == 'lead' %}
+{% if member.faculty-display-level == 1 %}
 <div class="row faculty">    
-		<div class="small-12 medium-3 large-4 columns">
-        	<img class="thumbnail" src="{{ member.image-url }}" />
-      	</div>
-      	<div class="small-12 medium-9 large-8 columns">
-			{% if member.name != '' %}
-			<h3>{{ member.name }}</h3>
+	<div class="small-12 medium-3 large-4 columns">
+		<img class="thumbnail" src="{{ member.image-url }}" />
+	</div>
+	<div class="small-12 medium-9 large-8 columns">
+		{% if member.name != '' %}
+		<h3>{{ member.name }}</h3>
+		{% endif%}
+		<p class="faculty-info">
+			{% assign roles = member.role %}
+			{% for role in roles %}
+			<span class="highlight black">{{ role }}</span>
+			{% if forloop.last == true %}
+			<br>
+			{% endif %}
+			{% endfor %}
+			{% if member.college != '' %}
+				{{ member.college }}<br>
 			{% endif%}
-	        <p class="faculty-info">
-				{% assign roles = member.role %}
-				{% for role in roles %}
-				<span class="highlight black">{{ role }}</span>
-				{% if forloop.last == true %}
-				<br>
-				{% endif %}
-            	{% endfor %}
-				{% if member.college != '' %}
-					{{ member.college }}<br>
-				{% endif%}
-				{% if member.email != '' %}
-					{{ member.email }}
-				{% endif%}
-			</p>
-			{% if member.content != '' %}
-			<p>{{ member.content }}</p>
+			{% if member.email != '' %}
+				{{ member.email }}
 			{% endif%}
-        </div>
-</div> 
+		</p>
+		{% if member.content != '' %}
+		<p>{{ member.content }}</p>
+		{% endif%}
+	</div>
+</div>
 {% endif %}
-
+{% endfor %}
+{% for member in sorted %}
+{% if member.faculty-display-level == 2 %}
+<div class="row faculty">    
+	<div class="small-12 medium-3 large-4 columns">
+		<img class="thumbnail" src="{{ member.image-url }}" />
+	</div>
+	<div class="small-12 medium-9 large-8 columns">
+		{% if member.name != '' %}
+		<h3>{{ member.name }}</h3>
+		{% endif%}
+		<p class="faculty-info">
+			{% assign roles = member.role %}
+			{% for role in roles %}
+			<span class="highlight black">{{ role }}</span>
+			{% if forloop.last == true %}
+			<br>
+			{% endif %}
+			{% endfor %}
+			{% if member.college != '' %}
+				{{ member.college }}<br>
+			{% endif%}
+			{% if member.email != '' %}
+				{{ member.email }}
+			{% endif%}
+		</p>
+		{% if member.content != '' %}
+		<p>{{ member.content }}</p>
+		{% endif%}
+	</div>
+</div>
+{% endif %}
+{% endfor %}
+{% for member in sorted %}
+{% if member.faculty-display-level == 3 %}
+<div class="row faculty">    
+	<div class="small-12 medium-3 large-4 columns">
+		<img class="thumbnail" src="{{ member.image-url }}" />
+	</div>
+	<div class="small-12 medium-9 large-8 columns">
+		{% if member.name != '' %}
+		<h3>{{ member.name }}</h3>
+		{% endif%}
+		<p class="faculty-info">
+			{% assign roles = member.role %}
+			{% for role in roles %}
+			<span class="highlight black">{{ role }}</span>
+			{% if forloop.last == true %}
+			<br>
+			{% endif %}
+			{% endfor %}
+			{% if member.college != '' %}
+				{{ member.college }}<br>
+			{% endif%}
+			{% if member.email != '' %}
+				{{ member.email }}
+			{% endif%}
+		</p>
+		{% if member.content != '' %}
+		<p>{{ member.content }}</p>
+		{% endif%}
+	</div>
+</div>
+{% endif %}
 {% endfor %}
