@@ -2,7 +2,7 @@
 name: Eduardo Navas
 titles: [Faculty]
 email: ean13@psu.edu
-image-url: ../assets/img/eduardo_navas.jpg
+image-url: ../assets/img/enavas-bio.jpg
 faculty-type: instructor
 faculty-display-level: 3
 display-order: 5

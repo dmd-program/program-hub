@@ -2,7 +2,7 @@
 name: Anna Divinsky
 titles: [Faculty]
 email: axd289@psu.edu
-image-url: ../assets/img/adivinsky-bio.jpg
+image-url: ../assets/img/annadivinsky-bio.jpg
 faculty-type: program coordinator
 faculty-display-level: 1
 display-order: 0.5
