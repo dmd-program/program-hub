@@ -1,7 +1,7 @@
 <div class="exhibitions">  
   <div class="row">
     <div class="exhibition-nav columns small-12">
-      <a href="{{ site.baseurl }}/exhibitions">⟵ View all exhibitions</a> | <a href="{{ site.baseurl }}/courses/{{page.course | slugify | remove: '-' }}">DMD 300: Digital Multimedia Design Studio</a>
+      <a href="{{ site.baseurl }}/exhibitions">⟵ View all exhibitions</a> <!-- | <a href="{{ site.baseurl }}/courses/{{page.course | slugify | remove: '-' }}">DMD 300: Digital Multimedia Design Studio</a> -->
       <hr>
       
       <!-- ORBIT SLIDER: https://foundation.zurb.com/sites/docs/v/5.5.3/components/orbit.html -->
@@ -29,7 +29,7 @@
 
         <div class="row">
           <div class="column small-8 small-push-2 medium-6 medium-push-3 text-center {{ page.exhibition | slugify }} exhibition-header">
-            <img class="exhibition-title-img" src="{{ site.baseurl }}{{page.exhibition-image}}" alt="abstract image that represent the exhibition">
+            <img class="{{ page.class }} exhibition-title-img" src="{{ site.baseurl }}{{page.exhibition-image}}" alt="abstract image that represent the exhibition">
             <h1 class="{{ page.exhibition | slugify }}">{{page.title}}</h1>
 
             <p class=""><span class="highlight black">{{page.semester}} {{page.year}}</span></p>
