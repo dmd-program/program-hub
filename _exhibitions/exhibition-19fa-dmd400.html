@@ -12,10 +12,27 @@ exhibition: exhibition-19fa-dmd400
 exhibition-theme: exhibition 02
 
 description: "The Senior Capstone Exhibition in an online exhibition that highlights work from students enrolled in DMD 400: Digital Multimedia Design Capstone."
-exhibition-image: '/assets/exhibitions/exhibition-01/logo/logo-exhibition-19fa-dmd400.png'
-card-image-url: '/assets/exhibitions/exhibition-01/logo/logo-exhibition-19fa-dmd400.png'
+exhibition-image: '/assets/exhibitions/19fa-dmd400/dmd400-fa19-exhibition@2x.png'
+card-image-url: '/assets/exhibitions/19fa-dmd400/dmd400-fa19-exhibition@2x.png'
+bg-element-1: '/assets/exhibitions/19fa-dmd400/acoupleofwavylines@2x.png'
 card-description: 'DMD 400: Fall 2019'
 private: false
 permalink: /:collection/:title/
 ---
-{% include exhibition-project-list.html exhibition-theme=page.exhibition-theme exhibition=page.exhibition exhibition-title=page.title exhibition-private=page.private %}
+
+<div class="parallax">
+    
+    <div class="parallax-group">
+        <div class="parallax-element parallax-element--depth-2">
+            <img class="bg-element-img" src="{{ site.baseurl }}{{page.bg-element-1}}" alt="bg element">
+        </div>
+        <div class="parallax-element parallax-element--depth-1">
+            {% include exhibition-project-list.html exhibition-theme=page.exhibition-theme exhibition=page.exhibition exhibition-title=page.title exhibition-private=page.private %}
+        </div>
+        
+        
+        
+    </div>
+    
+</div>
+
