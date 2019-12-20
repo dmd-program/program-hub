@@ -1,8 +1,8 @@
 <div class="exhibitions">  
-  <div class="row">
+  <div class="row expanded">
     <div class="exhibition-nav columns small-12">
       <a href="{{ site.baseurl }}/exhibitions">⟵ View all exhibitions</a> <!-- | <a href="{{ site.baseurl }}/courses/{{page.course | slugify | remove: '-' }}">DMD 300: Digital Multimedia Design Studio</a> -->
-      <hr>
+      <hr class="{{ page.exhibition | slugify }}">
       
       <!-- ORBIT SLIDER: https://foundation.zurb.com/sites/docs/v/5.5.3/components/orbit.html -->
       <!-- <div class="row columns">
@@ -28,12 +28,12 @@
 
 
         <div class="row">
-          <div class="column small-8 small-push-2 medium-6 medium-push-3 text-center {{ page.exhibition | slugify }} exhibition-header">
+          <div class="column small-10 small-push-1 medium-6 medium-push-3 text-center {{ page.exhibition | slugify }} exhibition-header">
             <img class="{{ page.class }} exhibition-title-img" src="{{ site.baseurl }}{{page.exhibition-image}}" alt="abstract image that represent the exhibition">
-            <h1 class="{{ page.exhibition | slugify }}">{{page.title}}</h1>
+            <h1 class="{{ page.exhibition | slugify }}--title">{{page.title}}</h1>
 
-            <p class=""><span class="highlight black">{{page.semester}} {{page.year}}</span></p>
-            <p class="text-left">{{page.description}}</p>
+            <p class="{{ page.exhibition | slugify }}--tag"><span class="highlight {{page.highlight-color}}">{{page.semester}} {{page.year}}</span></p>
+            <p class="{{ page.exhibition | slugify }}--description text-left">{{page.description}}</p>
             <!-- {{ if page.alt-exhibition-link != 'disable' }}
               <p class="text-left">{{page.alt-exhibition}}</p> <a href="{{ site.baseurl }}{{page.alt-exhibition-link}}">View PSU only exhibition here.</a>
             {{ endif }} -->
@@ -45,7 +45,7 @@
     </div>
     <div class="columns small-12">
         <div class="row">
-            <div class="columns small-8 small-push-2 foot-spacing">
+            <div class="columns small-8 small-push-2 medium-6 medium-push-3 foot-spacing">
       {% include projects.html exhibition-theme=include.exhibition-theme projects=site.projects exhibition=page.exhibition exhibition-private=include.exhibition-private %}
         </div>
       </div>

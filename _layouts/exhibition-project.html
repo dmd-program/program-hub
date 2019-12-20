@@ -2,7 +2,7 @@
 layout: default
 ---
 <div class="{{page.url | remove: 'private/' | remove: page.slug | slugify }}-style">
-<div class="{{ page.exhibition | slugify }} exhibition-nav row column">
+<div class="{{ page.exhibition | slugify }} exhibition-nav project-nav row column">
   
   {% if page.private == true %}
   <a href="{{ site.baseurl }}/private/exhibitions/{{ page.exhibition | slugify }}">← Back</a>
@@ -15,15 +15,28 @@ layout: default
 </div>
 <div class="row exhibition-header">
   <div class="column small-12 medium-6 large-7">
+    <p class="{{ page.exhibition | slugify }}--title project">{{ page.title }}</p>
+    <p class="{{ page.exhibition | slugify }}--name project">{{ page.name }}</p>
+    {%- if page.soc-linkedin -%}
+    <a class="{{ page.exhibition | slugify }} exhibition-card--social" href="{{ page.soc-linkedin }}"><span class="soc-linkedin exhibition-card--social">Linkedin</span></a>
+    {% endif %}
+    {%- if page.soc-medium -%}
+    <a class="{{ page.exhibition | slugify }} exhibition-card--social" href="{{ page.soc-medium }}"><span class="soc-medium exhibition-card--social">Medium</span></a>
+    {% endif %}
+    {%- if page.soc-instagram -%}
+    <a class="{{ page.exhibition | slugify }} exhibition-card--social" href="{{ page.soc-instagram }}"><span class="soc-instagram exhibition-card--social">Instagram</span></a>
+    {% endif %}
+    {%- if page.soc-twitter -%}
+    <a class="{{ page.exhibition | slugify }} exhibition-card--social" href="{{ page.soc-twitter }}"><span class="soc-twitter exhibition-card--social">Twitter</span></a>
+    {% endif %}
   </div>
 </div>
 <div class="row">
   <article class="theme-left-col column small-12 medium-6 large-5 {{ page.exhibition | slugify }}">
-    <p class="{{ page.exhibition | slugify }}--title">{{ page.title }}</p>
-    <p class="{{ page.exhibition | slugify }}--name">{{ page.name }}</p> 
+     
     <!-- Project tags -->
     {%- if page.tags -%}
-        <p><span class="project-links-title"></span>{%- assign tags = page.tags -%}{%- for tag in tags -%}
+        <p class="project-tags"><span class="project-links-title"></span>{%- assign tags = page.tags -%}{%- for tag in tags -%}
             <span class="highlight black small project-tag">{{ tag }}</span>
         {%- endfor -%}
         </p>
@@ -34,23 +47,23 @@ layout: default
     <hr>
     {% endif %}
     {% if page.project-external-link != '' %}
-    <p><span class="project-links-title">Project Link: </span><a href="{{ page.project-external-link }}"><i class="fa fa-external-link"></i> {{ page.project-external-link | truncate: 20 }}</a></p>
+    <p class="{{ page.exhibition | slugify }}--project-link"><span class="project-links-title">Project Link: </span><a href="{{ page.project-external-link }}"><i class="fa fa-external-link"></i> {{ page.project-external-link | truncate: 20 }}</a></p>
     {% endif %}
 
     <!-- Project files download -->
     {% if page.project-download-link != '' %}
-    <p><span class="project-links-title">Project Files: </span><a href="{{ site.baseurl }}/assets/projects/exhibitions/{{ page.ex-folder }}/{{ page.student-folder }}/{{ page.project-download-link }}"><i class="fa fa-arrow-down"></i> {{ page.project-download-link | truncate: 20 }}</a></p>
+    <p class="{{ page.exhibition | slugify }}--project-link"><span class="project-links-title">Project Files: </span><a href="{{ site.baseurl }}/assets/projects/exhibitions/{{ page.ex-folder }}/{{ page.student-folder }}/{{ page.project-download-link }}"><i class="fa fa-arrow-down"></i> {{ page.project-download-link | truncate: 20 }}</a></p>
 
     {% endif %}
 
     {% if page.project-doc != '' %}
     <!-- Project documentation download -->
-    <p><span class="project-links-title">Documentation: </span><a href="{{ site.baseurl }}/assets/projects/exhibitions/{{ page.ex-folder }}/{{ page.student-folder }}/{{ page.project-doc }}"><i class="fa fa-arrow-down"></i> {{ page.project-doc | truncate: 20 }}</a></p>
+    <p class="{{ page.exhibition | slugify }}--project-link"><span class="project-links-title">Documentation: </span><a href="{{ site.baseurl }}/assets/projects/exhibitions/{{ page.ex-folder }}/{{ page.student-folder }}/{{ page.project-doc }}"><i class="fa fa-arrow-down"></i> {{ page.project-doc | truncate: 20 }}</a></p>
     {% endif %}
 
     {% if page.production-blog != '' %}
     <!-- Production blog link -->
-    <p><span class="project-links-title">Production Blog: </span><a href="{{ page.production-blog }}"><i class="fa fa-external-link"></i> {{ page.production-blog | truncate: 20 }}</a></p>
+    <p class="{{ page.exhibition | slugify }}--project-link"><span class="project-links-title">Production Blog: </span><a href="{{ page.production-blog }}"><i class="fa fa-external-link"></i> {{ page.production-blog | truncate: 20 }}</a></p>
     {% endif %}
 <hr>
     
