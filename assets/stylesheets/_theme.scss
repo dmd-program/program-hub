@@ -748,12 +748,11 @@ $card-accent-color-2:#1da6e5;
 $card-accent-color-3:#e51d48;
 $card-accent-color-4:#948f8f;
 $card-accent-color-hr:$fa19-dmd400-text-color-2;
-$fa19-dmd400-card-background-color: rgba($card-accent-color,1);
-$fa19-dmd400-card-background-color: rgba($card-accent-color,1);
+$fa19-dmd400-card-background-color: lighten(rgba($card-accent-color,1),10%);
 // $fa19-dmd400-card-background-img: ;
-$fa19-dmd400-card-background-color-2: rgba($card-accent-color-2,1);
-$fa19-dmd400-card-background-color-3: rgba($card-accent-color-3,1);
-$fa19-dmd400-card-background-color-4: rgba($card-accent-color-4,1);
+$fa19-dmd400-card-background-color-2: lighten(rgba($card-accent-color-2,1),10%);
+$fa19-dmd400-card-background-color-3: lighten(rgba($card-accent-color-3,1),10%);
+$fa19-dmd400-card-background-color-4: lighten(rgba($card-accent-color-4,1),10%);
 $fa19-dmd400-card-background-color-hover: rgba($card-accent-color,1);
 $fa19-dmd400-card-background-color-hover-2: rgba($card-accent-color-2,1);
 $fa19-dmd400-card-background-color-hover-3: rgba($card-accent-color-3,1);
@@ -788,6 +787,8 @@ $fa19-dmd400-card-border-transition: border 0.4s ease-in-out 0s;
 $fa19-dmd400-card-border-transition-hover: border 0.4s ease-in-out 0s;
 $fa19-dmd400-card-padding-transition: padding 0.4s ease-in-out 0s;
 $fa19-dmd400-card-padding-transition-hover: padding 0.4s ease-in-out 0s;
+$fa19-dmd400-card-background-color-transition: background-color 0.2s ease-in-out 0s;
+$fa19-dmd400-card-background-color-transition-hover: background-color 0.2s ease-in-out 0s;
 
 
 //
@@ -874,23 +875,27 @@ a.exhibition-19fa-dmd400.exhibition-card {
 			padding:$fa19-dmd400-card-padding-size-hover;
 			border: $fa19-dmd400-card-border-size-hover $fa19-dmd400-card-border-color-hover $fa19-dmd400-card-border-style-hover;
 			box-shadow: $fa19-dmd400-card-shadow-size-hover $fa19-dmd400-card-shadow-color-hover;
-			transition: $fa19-dmd400-card-padding-transition-hover, $fa19-dmd400-card-border-transition-hover, $fa19-dmd400-card-shadow-transition-hover; 	
+			transition: $fa19-dmd400-card-background-color-transition-hover, $fa19-dmd400-card-padding-transition-hover, $fa19-dmd400-card-border-transition-hover, $fa19-dmd400-card-shadow-transition-hover; 	
 			
 			&:nth-child(1n+0) {
 				box-shadow: $fa19-dmd400-card-shadow-size-hover $fa19-dmd400-card-shadow-color-hover;
 				border: $fa19-dmd400-card-border-size-hover $fa19-dmd400-card-border-style-hover darken($fa19-dmd400-card-border-color-hover,10%);
+				background-color: $fa19-dmd400-card-background-color-hover;
 			}
 			&:nth-child(2n+0) {
 				box-shadow: $fa19-dmd400-card-shadow-size-hover $fa19-dmd400-card-shadow-color-hover-2;
 				border: $fa19-dmd400-card-border-size-hover $fa19-dmd400-card-border-style-hover darken($fa19-dmd400-card-border-color-hover-2,10%);
+				background-color: $fa19-dmd400-card-background-color-hover-2;
 			}
 			&:nth-child(3n+0) {
 				box-shadow: $fa19-dmd400-card-shadow-size-hover $fa19-dmd400-card-shadow-color-hover-3;
 				border: $fa19-dmd400-card-border-size-hover $fa19-dmd400-card-border-style-hover darken($fa19-dmd400-card-border-color-hover-3,10%);
+				background-color: $fa19-dmd400-card-background-color-hover-3;
 			}
 			&:nth-child(4n+0) {
 				box-shadow: $fa19-dmd400-card-shadow-size-hover $fa19-dmd400-card-shadow-color-hover-4;
 				border: $fa19-dmd400-card-border-size-hover $fa19-dmd400-card-border-style-hover darken($fa19-dmd400-card-border-color-hover-4,10%);
+				background-color: $fa19-dmd400-card-background-color-hover-4;
 			}
 			
 		}
@@ -1001,18 +1006,19 @@ p.exhibition-19fa-dmd400 {
 		color:$fa19-dmd400-text-color;
 		margin-top:2rem;
 		line-height: 0.9;
+		@media #{$small-only} {
+			font-size: 2rem;
+		}
+		@media #{$medium-up} {
+			font-size: 3rem;
+		}
+		@media #{$large-up} {
+			font-size: 4rem;
+		}
 		&.project {
 			color:$fa19-dmd400-text-color-2;
 
-			@media #{$small-up} {
-				font-size: 2rem;
-			}
-			@media #{$medium-up} {
-				font-size: 3rem;
-			}
-			@media #{$large-up} {
-				font-size: 4rem;
-			}
+			
 		}
 	}
 	&--project-link {
@@ -1042,46 +1048,46 @@ p.card-tags {
 
 }
 // From: https://keithclark.co.uk/articles/pure-css-parallax-websites/demo3-webkit-overflow-fix/
-.parallax {
-    height: 500px;
-    height: 100vh;
-    overflow-x: hidden;
-    overflow-y: auto;
-    -webkit-perspective: 300px;
-    perspective: 300px;
-    -webkit-perspective-origin-x: 100%;
-    perspective-origin-x: 100%;
-}
-.parallax-group {
-	position: relative;
-	height: auto;
-	height: 100vh;
-	-webkit-transform-style: preserve-3d;
-	transform-style: preserve-3d;
-}
-.parallax-element {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
+// .parallax {
+//     height: 500px;
+//     height: 100vh;
+//     overflow-x: hidden;
+//     overflow-y: auto;
+//     -webkit-perspective: 300px;
+//     perspective: 300px;
+//     -webkit-perspective-origin-x: 100%;
+//     perspective-origin-x: 100%;
+// }
+// .parallax-group {
+// 	position: relative;
+// 	height: auto;
+// 	height: 100vh;
+// 	-webkit-transform-style: preserve-3d;
+// 	transform-style: preserve-3d;
+// }
+// .parallax-element {
+// 	position: absolute;
+// 	top: 0;
+// 	left: 0;
+// 	right: 0;
+// 	bottom: 0;
 	
-	&--depth-1 {
-		transform: translateZ(0) scale(1);
-		z-index: 4;
-	}
-    &--depth-2 {
-		transform:translateZ(-300px) translateX(50%) translateY(400px) scale(1.5);
-		transform-origin: 50% 50%;
-		z-index: 3;
-		opacity: 0.25;
-	}
-	&--depth-3 {
-		transform:translateZ(-300px) translateX(-100%) translateY(2000px) scale(1.5);
-		transform-origin: 50% 50%;
-		z-index: 3;
-		opacity: 0.25;
-	}
+// 	&--depth-1 {
+// 		transform: translateZ(0) scale(1);
+// 		z-index: 4;
+// 	}
+//     &--depth-2 {
+// 		transform:translateZ(-300px) translateX(50%) translateY(400px) scale(1.5);
+// 		transform-origin: 50% 50%;
+// 		z-index: 3;
+// 		opacity: 0.25;
+// 	}
+// 	&--depth-3 {
+// 		transform:translateZ(-300px) translateX(-100%) translateY(2000px) scale(1.5);
+// 		transform-origin: 50% 50%;
+// 		z-index: 3;
+// 		opacity: 0.25;
+// 	}
 	// &--depth-4 {
 	// 	transform:translateZ(-300px) translateX(-50%) translateY(3200px) scale(2);
 	// 	transform-origin: 50% 50%;
@@ -1105,4 +1111,4 @@ p.card-tags {
 	// 	transform-origin: 50% 50%;
 	// 	z-index: 3;
 	// }
-}
+// }
