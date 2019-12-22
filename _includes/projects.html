@@ -26,7 +26,7 @@
 {% for project in items %}
     {% unless project.private == true  %}
         <a class="{{ project.class }} exhibition-card" href="{{ project.url | prepend: site.baseurl }}">
-            <img class="{{ project.class }}  exhibition-card--img" src="{{ site.baseurl }}/assets/projects/exhibitions/{{ project.ex-folder }}/{{ project.student-folder }}/{{ project.card-image-url }}">
+            <img class="{{ project.class }}  exhibition-card--img" src="{{ site.baseurl }}/assets/projects/exhibitions/{{ project.ex-folder }}/{{ project.student-folder }}/{{ project.card-image-url }}" alt="An image representing the project, {{ project.title }} created by {{ project.name }}">
             <span class="{{ project.class }} exhibition-card--title">{{ project.title }}</span>
             <span class="{{ project.class }} exhibition-card--name">{{ project.name }}</span>
             <!-- <span class="{{ project.class }} exhibition-card--description">{{ project.card-description }}</span> -->
