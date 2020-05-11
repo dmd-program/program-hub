@@ -1,5 +1,11 @@
 //
 // Foundation-Jekyll - Custom Theme Styles
+// mixins
+@mixin shadow {
+	filter: drop-shadow(0px 0px 4px rgba(0,0,0,0.4));
+-webkit-filter: drop-shadow(0px 0px 4px rgba(0,0,0,0.4));
+-moz-filter: drop-shadow(0px 0px 4px rgba(0,0,0,0.4));
+}
 //
 $main-accent-color:#ff5722;
 $heading-color:#333333;
@@ -663,15 +669,43 @@ hr.exhibition-01, hr.exhibition-02, hr.exhibition-19fa-dmd300 {
 hr.exhibition-19fa-dmd400 {
 	border-bottom: none;
 }
-
-// Theme specific styles
-body.exhibition-19fa-dmd400-project-theme {
-	background-image: url('../../assets/exhibitions/19fa-dmd400/bg-noise.png');
-	background-repeat: repeat; 
-	background-position: center;
-	background-size: 47.25px auto;
-	background-color:#231F20;
+// RESPONSIVE IFRAMES
+// Apply ratio to container
+.ratio-16-9,
+.ratio-16-10,
+.ratio-square {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 0;
 }
+
+.ratio-16-9 {
+    padding-top: 56.25%; /* This is your aspect-ratio */
+}
+
+.ratio-16-10 {
+    padding-top: 62.5%; /* This is your aspect-ratio */
+}
+
+.ratio-square {
+    padding-top: 100%; /* This is your aspect-ratio */
+}
+// apply ration inner to iframe
+.ratio-inner {
+    display: block;
+    position: absolute;
+
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 100%;
+}
+
+
 
 .exhibition-nav {
 	padding-top:1rem;
@@ -689,7 +723,9 @@ body.exhibition-19fa-dmd400-project-theme {
 .exhibition-02.exhibition-card,
 .exhibition-02-project-theme.exhibition-card,
 .exhibition-19fa-dmd300.exhibition-card,
-.exhibition-19fa-dmd300-project-theme.exhibition-card {
+.exhibition-19fa-dmd300-project-theme.exhibition-card,
+.exhibition-20sp-dmd400.exhibition-card,
+.exhibition-20sp-dmd400-project-theme.exhibition-card {
 	border:4px solid #000;
 	padding:2rem;
 	display: block;
@@ -737,8 +773,6 @@ body.exhibition-19fa-dmd400-project-theme {
 		text-transform: uppercase;
 	}
 }
-
-
 
 // Exhibition card list settings for 19fa-dmd400
 $fa19-dmd400-text-color:#F4F1D0;
@@ -789,11 +823,122 @@ $fa19-dmd400-card-padding-transition: padding 0.4s ease-in-out 0s;
 $fa19-dmd400-card-padding-transition-hover: padding 0.4s ease-in-out 0s;
 $fa19-dmd400-card-background-color-transition: background-color 0.2s ease-in-out 0s;
 $fa19-dmd400-card-background-color-transition-hover: background-color 0.2s ease-in-out 0s;
+// Exhbition settings
+$sp20-dmd400-title-color:#000;
+$sp20-dmd400-project-title-color:#000;
+$sp20-dmd400-background-color:#cfcfcf;
+$sp20-dmd400-project-hr-color:#fff;
+$sp20-dmd400-project-background-color:#ddd;
+$sp20-dmd400-project-header-background-color:#ddd;
+$sp20-dmd400-project-link-color:#000;
+$sp20-dmd400-project-link-hover-color:#000;
+$sp20-dmd400-project-link-hover-bg-color:#fff;
+$exhibition-description-color:#464646;
+$sp20-dmd400-exhibition-tag-color:#464646;
+$sp20-dmd400-exhibition-tag-bg-color:#fff;
+$sp20-dmd400-exhibition-nav-hr:#000;
+// Exhibition card list settings for 20sp-dmd400
+//
+$sp20-dmd400-text-color:rgb(221, 221, 221);
+$sp20-dmd400-text-color-2:rgb(112, 112, 112);
+$card-accent-color:#fff;
+$card-accent-color-2:#fff;
+$card-accent-color-3:#fff;
+$card-accent-color-4:#fff;
+$card-accent-color-hr:#ccc;
+$sp20-dmd400-card-background-color: lighten(rgba($card-accent-color,1),10%);
+// $sp20-dmd400-card-background-img: ;
+$sp20-dmd400-card-background-color-2: lighten(rgba($card-accent-color-2,1),90%);
+$sp20-dmd400-card-background-color-3: lighten(rgba($card-accent-color-3,1),10%);
+$sp20-dmd400-card-background-color-4: lighten(rgba($card-accent-color-4,1),10%);
+$sp20-dmd400-card-background-color-hover: rgba($card-accent-color,1);
+$sp20-dmd400-card-background-color-hover-2: rgba($card-accent-color-2,1);
+$sp20-dmd400-card-background-color-hover-3: rgba($card-accent-color-3,1);
+$sp20-dmd400-card-background-color-hover-4: rgba($card-accent-color-4,1);
+$sp20-dmd400-card-border-color: rgba($card-accent-color,1);
+$sp20-dmd400-card-border-color-2: rgba($card-accent-color-2,1);
+$sp20-dmd400-card-border-color-3: rgba($card-accent-color-3,1);
+$sp20-dmd400-card-border-color-4: rgba($card-accent-color-4,1);
+$sp20-dmd400-card-border-color-hover: rgba($card-accent-color,1);
+$sp20-dmd400-card-border-color-hover-2: rgba($card-accent-color-2,1);
+$sp20-dmd400-card-border-color-hover-3: rgba($card-accent-color-3,1);
+$sp20-dmd400-card-border-color-hover-4: rgba($card-accent-color-4,1);
+$sp20-dmd400-card-padding-size: 2rem;
+$sp20-dmd400-card-padding-size-hover: 1.25rem;
+$sp20-dmd400-card-border-size: 4px;
+$sp20-dmd400-card-border-size-hover:16px;
+$sp20-dmd400-card-border-style: solid;
+$sp20-dmd400-card-border-style-hover: solid;
+$sp20-dmd400-card-shadow-color: rgba($card-accent-color,1);
+$sp20-dmd400-card-shadow-color-2: rgba($card-accent-color-2,1);
+$sp20-dmd400-card-shadow-color-3: rgba($card-accent-color-3,1);
+$sp20-dmd400-card-shadow-color-4: rgba($card-accent-color-4,1);
+$sp20-dmd400-card-shadow-color-hover:rgba($card-accent-color,0.2);
+$sp20-dmd400-card-shadow-color-hover-2:rgba($card-accent-color-2,0.2);
+$sp20-dmd400-card-shadow-color-hover-3:rgba($card-accent-color-3,0.2);
+$sp20-dmd400-card-shadow-color-hover-4:rgba($card-accent-color-4,0.2);
+$sp20-dmd400-card-shadow-size: 8px 8px 0px 0px;
+$sp20-dmd400-card-shadow-size-hover: 16px 16px 0px 0px;
+$sp20-dmd400-card-shadow-transition: box-shadow 0.2s ease-in-out 0s;
+$sp20-dmd400-card-shadow-transition-hover: box-shadow 0.2s ease-in-out 0s;
+$sp20-dmd400-card-border-transition: border 0.4s ease-in-out 0s;
+$sp20-dmd400-card-border-transition-hover: border 0.4s ease-in-out 0s;
+$sp20-dmd400-card-padding-transition: padding 0.4s ease-in-out 0s;
+$sp20-dmd400-card-padding-transition-hover: padding 0.4s ease-in-out 0s;
+$sp20-dmd400-card-background-color-transition: background-color 0.2s ease-in-out 0s;
+$sp20-dmd400-card-background-color-transition-hover: background-color 0.2s ease-in-out 0s;
 
-
+// Theme specific styles
+body.exhibition-19fa-dmd400-project-theme {
+	background-image: url('../../assets/exhibitions/19fa-dmd400/bg-noise.png');
+	background-repeat: repeat; 
+	background-position: center;
+	background-size: 47.25px auto;
+	background-color:#231F20;
+}
+body.exhibition-20sp-dmd400-project-theme {
+	background-image: url('../../assets/exhibitions/20sp-dmd400/dmd400-exhibition-bg-graphic.jpg');
+	background-repeat: no-repeat; 
+	background-position: right bottom;
+	background-attachment: fixed;
+	background-size: 500px auto;
+	background-color:$sp20-dmd400-background-color;
+}
 //
 .exhibition-19fa-dmd400-project-theme {
+	.exhibition-nav {
+		a, a:visited {
+			color:#fff;
+		}
+		a:hover, a:focus {
+			color:#fff;
 
+		}
+	}
+	.project-nav {
+		a, a:visited {
+			color:#000;
+		}
+		a:hover, a:focus {
+			color:#000;
+
+		}
+	}
+}
+.exhibition-20sp-dmd400-project-theme {
+	hr.exhibition-20sp-dmd400 {
+		border-bottom: 1px solid $sp20-dmd400-exhibition-nav-hr;
+	}
+	.thumbnail {
+		border: solid 10px #fff;
+		box-shadow: 0 0 0 0px rgba(0,0,0,0.2);
+		&:hover {
+			box-shadow: 0 0 0 10px rgba(0,0,0,0.1);
+		}
+	}
+	.responsive-video-container {
+		margin-bottom:1rem;
+	}
 	.exhibition-nav {
 		a, a:visited {
 			color:#fff;
@@ -817,6 +962,28 @@ $fa19-dmd400-card-background-color-transition-hover: background-color 0.2s ease-
 .exhibition-19fa-dmd400-projects-style {
 	background-color: #dddada;
 }
+.exhibition-20sp-dmd400-projects-style {
+	background-color: $sp20-dmd400-project-background-color;
+	.exhibition-header {
+		padding-top:6rem;
+		padding-bottom:3rem;
+		margin-top:0;
+		margin-bottom:3rem;
+		background-color:$sp20-dmd400-project-header-background-color;
+	}
+	hr {
+		height: 4px;
+		border-right: 0;
+		border-top: 0;
+		border-bottom: 0;
+		border-left: 0;
+		margin: 1.25rem auto;
+		clear: both;
+		background-color: $sp20-dmd400-project-hr-color;
+		height:4px;
+		border-radius: 4px;
+	}
+}
 
 a.exhibition-19fa-dmd400.exhibition-card {
 	&--social {
@@ -831,114 +998,320 @@ a.exhibition-19fa-dmd400.exhibition-card {
 		}
 	}
 }
-.exhibition-19fa-dmd400.exhibition-card,
-.exhibition-19fa-dmd400-project-theme.exhibition-card {
-		
-		display: block;
-		margin-bottom:3rem;
-		background-color: $fa19-dmd400-card-background-color;
-		border: $fa19-dmd400-card-border-size $fa19-dmd400-card-border-color $fa19-dmd400-card-border-style;
-		padding:$fa19-dmd400-card-padding-size;
-		box-shadow: $fa19-dmd400-card-shadow-size $fa19-dmd400-card-shadow-color;
-		transition: $fa19-dmd400-card-padding-transition, $fa19-dmd400-card-border-transition, $fa19-dmd400-card-shadow-transition; 
-		
-		hr {
-			border-bottom: 1px solid $card-accent-color-hr;
-		}
-		
-		&:nth-child(1n+0) {
-			background-color: $fa19-dmd400-card-background-color;
-			box-shadow: $fa19-dmd400-card-shadow-size $fa19-dmd400-card-shadow-color;
-			border: $fa19-dmd400-card-border-size $fa19-dmd400-card-border-color $fa19-dmd400-card-border-style;
-			
-		}
-		&:nth-child(2n+0) {
-			background-color: $fa19-dmd400-card-background-color-2;
-			box-shadow:  $fa19-dmd400-card-shadow-size $fa19-dmd400-card-shadow-color-2;
-			border: $fa19-dmd400-card-border-size $fa19-dmd400-card-border-color-2 $fa19-dmd400-card-border-style;
-			
-		}
-		&:nth-child(3n+0) {
-			background-color: $fa19-dmd400-card-background-color-3;
-			box-shadow: $fa19-dmd400-card-shadow-size $fa19-dmd400-card-shadow-color-3;
-			border: $fa19-dmd400-card-border-size $fa19-dmd400-card-border-color-3 $fa19-dmd400-card-border-style;
-			
-		}
-		&:nth-child(4n+0) {
-			background-color: $fa19-dmd400-card-background-color-4;
-			box-shadow: $fa19-dmd400-card-shadow-size $fa19-dmd400-card-shadow-color-4;
-			border: $fa19-dmd400-card-border-size $fa19-dmd400-card-border-color-4 $fa19-dmd400-card-border-style;
-			
-		}
+a.exhibition-20sp-dmd400.exhibition-card {
+	&--social {
+		display:block;
+		color: #9E9E9E;
+		width:auto;
+		float: left;
+    	clear: both;
 		&:hover, &:focus {
-			color:$fa19-dmd400-text-color;
-			padding:$fa19-dmd400-card-padding-size-hover;
-			border: $fa19-dmd400-card-border-size-hover $fa19-dmd400-card-border-color-hover $fa19-dmd400-card-border-style-hover;
-			box-shadow: $fa19-dmd400-card-shadow-size-hover $fa19-dmd400-card-shadow-color-hover;
-			transition: $fa19-dmd400-card-background-color-transition-hover, $fa19-dmd400-card-padding-transition-hover, $fa19-dmd400-card-border-transition-hover, $fa19-dmd400-card-shadow-transition-hover; 	
-			
-			&:nth-child(1n+0) {
-				box-shadow: $fa19-dmd400-card-shadow-size-hover $fa19-dmd400-card-shadow-color-hover;
-				border: $fa19-dmd400-card-border-size-hover $fa19-dmd400-card-border-style-hover darken($fa19-dmd400-card-border-color-hover,10%);
-				background-color: $fa19-dmd400-card-background-color-hover;
-			}
-			&:nth-child(2n+0) {
-				box-shadow: $fa19-dmd400-card-shadow-size-hover $fa19-dmd400-card-shadow-color-hover-2;
-				border: $fa19-dmd400-card-border-size-hover $fa19-dmd400-card-border-style-hover darken($fa19-dmd400-card-border-color-hover-2,10%);
-				background-color: $fa19-dmd400-card-background-color-hover-2;
-			}
-			&:nth-child(3n+0) {
-				box-shadow: $fa19-dmd400-card-shadow-size-hover $fa19-dmd400-card-shadow-color-hover-3;
-				border: $fa19-dmd400-card-border-size-hover $fa19-dmd400-card-border-style-hover darken($fa19-dmd400-card-border-color-hover-3,10%);
-				background-color: $fa19-dmd400-card-background-color-hover-3;
-			}
-			&:nth-child(4n+0) {
-				box-shadow: $fa19-dmd400-card-shadow-size-hover $fa19-dmd400-card-shadow-color-hover-4;
-				border: $fa19-dmd400-card-border-size-hover $fa19-dmd400-card-border-style-hover darken($fa19-dmd400-card-border-color-hover-4,10%);
-				background-color: $fa19-dmd400-card-background-color-hover-4;
-			}
-			
-		}
-		
-		  
-		
-		
-		&--title {
-			display: block;
-			font-size: 1.5rem;
-			padding: 2rem 0 0 0;
-			text-transform: uppercase;
-			font-weight:700;
-			text-align: center;
-			
-		}
-		&--name {
-			display: block;
-			font-size: 1rem;
-			padding: 0.5rem 1rem 0;
-			text-align: center;
-			
-		}
-		&--description {
-			display: block;
-			font-size: 0.9rem;
-			padding: 0.75rem 1rem 0;
-		}
-		&--description {
-			display: block;
-			font-size: 0.9rem;
-			padding: 0.75rem 1rem 0;
-		}
-		&--img {
-			-webkit-filter: grayscale(1);
-			filter: grayscale(1);
-			mix-blend-mode: screen;
-			
-		}
-		.card-title {
-			text-transform: uppercase;
+		background-color: $sp20-dmd400-text-color-2;	
+		// color:$card-accent-color;
 		}
 	}
+}
+.exhibition-19fa-dmd400.exhibition-card,
+.exhibition-19fa-dmd400-project-theme.exhibition-card {
+	display: block;
+	margin-bottom:3rem;
+	background-color: $fa19-dmd400-card-background-color;
+	border: $fa19-dmd400-card-border-size $fa19-dmd400-card-border-color $fa19-dmd400-card-border-style;
+	padding:$fa19-dmd400-card-padding-size;
+	box-shadow: $fa19-dmd400-card-shadow-size $fa19-dmd400-card-shadow-color;
+	transition: $fa19-dmd400-card-padding-transition, $fa19-dmd400-card-border-transition, $fa19-dmd400-card-shadow-transition; 
+	
+	hr {
+		border-bottom: 1px solid $card-accent-color-hr;
+	}
+	
+	&:nth-child(1n+0) {
+		background-color: $fa19-dmd400-card-background-color;
+		box-shadow: $fa19-dmd400-card-shadow-size $fa19-dmd400-card-shadow-color;
+		border: $fa19-dmd400-card-border-size $fa19-dmd400-card-border-color $fa19-dmd400-card-border-style;
+		
+	}
+	&:nth-child(2n+0) {
+		background-color: $fa19-dmd400-card-background-color-2;
+		box-shadow:  $fa19-dmd400-card-shadow-size $fa19-dmd400-card-shadow-color-2;
+		border: $fa19-dmd400-card-border-size $fa19-dmd400-card-border-color-2 $fa19-dmd400-card-border-style;
+		
+	}
+	&:nth-child(3n+0) {
+		background-color: $fa19-dmd400-card-background-color-3;
+		box-shadow: $fa19-dmd400-card-shadow-size $fa19-dmd400-card-shadow-color-3;
+		border: $fa19-dmd400-card-border-size $fa19-dmd400-card-border-color-3 $fa19-dmd400-card-border-style;
+		
+	}
+	&:nth-child(4n+0) {
+		background-color: $fa19-dmd400-card-background-color-4;
+		box-shadow: $fa19-dmd400-card-shadow-size $fa19-dmd400-card-shadow-color-4;
+		border: $fa19-dmd400-card-border-size $fa19-dmd400-card-border-color-4 $fa19-dmd400-card-border-style;
+		
+	}
+	&:hover, &:focus {
+		color:$fa19-dmd400-text-color;
+		padding:$fa19-dmd400-card-padding-size-hover;
+		border: $fa19-dmd400-card-border-size-hover $fa19-dmd400-card-border-color-hover $fa19-dmd400-card-border-style-hover;
+		box-shadow: $fa19-dmd400-card-shadow-size-hover $fa19-dmd400-card-shadow-color-hover;
+		transition: $fa19-dmd400-card-background-color-transition-hover, $fa19-dmd400-card-padding-transition-hover, $fa19-dmd400-card-border-transition-hover, $fa19-dmd400-card-shadow-transition-hover; 	
+		
+		&:nth-child(1n+0) {
+			box-shadow: $fa19-dmd400-card-shadow-size-hover $fa19-dmd400-card-shadow-color-hover;
+			border: $fa19-dmd400-card-border-size-hover $fa19-dmd400-card-border-style-hover darken($fa19-dmd400-card-border-color-hover,10%);
+			background-color: $fa19-dmd400-card-background-color-hover;
+		}
+		&:nth-child(2n+0) {
+			box-shadow: $fa19-dmd400-card-shadow-size-hover $fa19-dmd400-card-shadow-color-hover-2;
+			border: $fa19-dmd400-card-border-size-hover $fa19-dmd400-card-border-style-hover darken($fa19-dmd400-card-border-color-hover-2,10%);
+			background-color: $fa19-dmd400-card-background-color-hover-2;
+		}
+		&:nth-child(3n+0) {
+			box-shadow: $fa19-dmd400-card-shadow-size-hover $fa19-dmd400-card-shadow-color-hover-3;
+			border: $fa19-dmd400-card-border-size-hover $fa19-dmd400-card-border-style-hover darken($fa19-dmd400-card-border-color-hover-3,10%);
+			background-color: $fa19-dmd400-card-background-color-hover-3;
+		}
+		&:nth-child(4n+0) {
+			box-shadow: $fa19-dmd400-card-shadow-size-hover $fa19-dmd400-card-shadow-color-hover-4;
+			border: $fa19-dmd400-card-border-size-hover $fa19-dmd400-card-border-style-hover darken($fa19-dmd400-card-border-color-hover-4,10%);
+			background-color: $fa19-dmd400-card-background-color-hover-4;
+		}
+	}
+	&--title {
+		display: block;
+		font-size: 1.5rem;
+		padding: 2rem 0 0 0;
+		text-transform: uppercase;
+		font-weight:700;
+		text-align: center;
+		
+	}
+	&--name {
+		display: block;
+		font-size: 1rem;
+		padding: 0.5rem 1rem 0;
+		text-align: center;
+		
+	}
+	&--description {
+		display: block;
+		font-size: 0.9rem;
+		padding: 0.75rem 1rem 0;
+	}
+	&--img {
+		-webkit-filter: grayscale(1);
+		filter: grayscale(1);
+		mix-blend-mode: screen;
+		
+	}
+	.card-title {
+		text-transform: uppercase;
+	}
+}
+.exhibition-20sp-dmd400.exhibition-card,
+.exhibition-20sp-dmd400-project-theme.exhibition-card {
+	display: block;
+	margin-bottom:3rem;
+	background-color: $sp20-dmd400-card-background-color;
+	border: $sp20-dmd400-card-border-size $sp20-dmd400-card-border-color $sp20-dmd400-card-border-style;
+	padding:$sp20-dmd400-card-padding-size;
+	box-shadow: $sp20-dmd400-card-shadow-size $sp20-dmd400-card-shadow-color;
+	transition: $sp20-dmd400-card-padding-transition, $sp20-dmd400-card-border-transition, $sp20-dmd400-card-shadow-transition; 
+	
+	hr {
+		border-bottom: 1px solid $sp20-dmd400-exhibition-nav-hr;
+	}
+	
+	&:nth-child(1n+0) {
+		background-color: $sp20-dmd400-card-background-color;
+		box-shadow: $sp20-dmd400-card-shadow-size $sp20-dmd400-card-shadow-color;
+		border: $sp20-dmd400-card-border-size $sp20-dmd400-card-border-color $sp20-dmd400-card-border-style;
+		
+	}
+	&:nth-child(2n+0) {
+		background-color: $sp20-dmd400-card-background-color-2;
+		box-shadow:  $sp20-dmd400-card-shadow-size $sp20-dmd400-card-shadow-color-2;
+		border: $sp20-dmd400-card-border-size $sp20-dmd400-card-border-color-2 $sp20-dmd400-card-border-style;
+		
+	}
+	&:nth-child(3n+0) {
+		background-color: $sp20-dmd400-card-background-color-3;
+		box-shadow: $sp20-dmd400-card-shadow-size $sp20-dmd400-card-shadow-color-3;
+		border: $sp20-dmd400-card-border-size $sp20-dmd400-card-border-color-3 $sp20-dmd400-card-border-style;
+		
+	}
+	&:nth-child(4n+0) {
+		background-color: $sp20-dmd400-card-background-color-4;
+		box-shadow: $sp20-dmd400-card-shadow-size $sp20-dmd400-card-shadow-color-4;
+		border: $sp20-dmd400-card-border-size $sp20-dmd400-card-border-color-4 $sp20-dmd400-card-border-style;
+		
+	}
+	&:hover, &:focus {
+		color:$sp20-dmd400-text-color;
+		padding:$sp20-dmd400-card-padding-size-hover;
+		border: $sp20-dmd400-card-border-size-hover $sp20-dmd400-card-border-color-hover $sp20-dmd400-card-border-style-hover;
+		box-shadow: $sp20-dmd400-card-shadow-size-hover $sp20-dmd400-card-shadow-color-hover;
+		transition: $sp20-dmd400-card-background-color-transition-hover, $sp20-dmd400-card-padding-transition-hover, $sp20-dmd400-card-border-transition-hover, $sp20-dmd400-card-shadow-transition-hover; 	
+		
+		&:nth-child(1n+0) {
+			box-shadow: $sp20-dmd400-card-shadow-size-hover $sp20-dmd400-card-shadow-color-hover;
+			border: $sp20-dmd400-card-border-size-hover $sp20-dmd400-card-border-style-hover darken($sp20-dmd400-card-border-color-hover,10%);
+			background-color: $sp20-dmd400-card-background-color-hover;
+		}
+		&:nth-child(2n+0) {
+			box-shadow: $sp20-dmd400-card-shadow-size-hover $sp20-dmd400-card-shadow-color-hover-2;
+			border: $sp20-dmd400-card-border-size-hover $sp20-dmd400-card-border-style-hover darken($sp20-dmd400-card-border-color-hover-2,10%);
+			background-color: $sp20-dmd400-card-background-color-hover-2;
+		}
+		&:nth-child(3n+0) {
+			box-shadow: $sp20-dmd400-card-shadow-size-hover $sp20-dmd400-card-shadow-color-hover-3;
+			border: $sp20-dmd400-card-border-size-hover $sp20-dmd400-card-border-style-hover darken($sp20-dmd400-card-border-color-hover-3,10%);
+			background-color: $sp20-dmd400-card-background-color-hover-3;
+		}
+		&:nth-child(4n+0) {
+			box-shadow: $sp20-dmd400-card-shadow-size-hover $sp20-dmd400-card-shadow-color-hover-4;
+			border: $sp20-dmd400-card-border-size-hover $sp20-dmd400-card-border-style-hover darken($sp20-dmd400-card-border-color-hover-4,10%);
+			background-color: $sp20-dmd400-card-background-color-hover-4;
+		}
+		
+	}
+	&--title {
+		display: block;
+		font-size: 1.5rem;
+		padding: 2rem 0 0 0;
+		text-transform: uppercase;
+		font-weight:700;
+		text-align: center;
+		
+	}
+	&--name {
+		display: block;
+		font-size: 1rem;
+		padding: 0.5rem 1rem 0;
+		text-align: center;
+		
+	}
+	&--description {
+		display: block;
+		font-size: 0.9rem;
+		padding: 0.75rem 1rem 0;
+	}
+	&--img {
+		-webkit-filter: grayscale(1);
+		filter: grayscale(1);
+		mix-blend-mode: screen;
+		
+	}
+	.card-title {
+		text-transform: uppercase;
+	}
+}
+
+
+
+.exhibition-20sp-dmd400.exhibition-card,
+.exhibition-20sp-dmd400-project-theme.exhibition-card {
+	display: block;
+	margin-bottom:3rem;
+	background-color: $sp20-dmd400-card-background-color;
+	border: $sp20-dmd400-card-border-size $sp20-dmd400-card-border-color $sp20-dmd400-card-border-style;
+	padding:$sp20-dmd400-card-padding-size;
+	box-shadow: $sp20-dmd400-card-shadow-size $sp20-dmd400-card-shadow-color;
+	transition: $sp20-dmd400-card-padding-transition, $sp20-dmd400-card-border-transition, $sp20-dmd400-card-shadow-transition; 
+	
+	hr {
+		border-bottom: 1px solid $sp20-dmd400-exhibition-nav-hr;
+	}
+	
+	&:nth-child(1n+0) {
+		background-color: $sp20-dmd400-card-background-color;
+		box-shadow: $sp20-dmd400-card-shadow-size $sp20-dmd400-card-shadow-color;
+		border: $sp20-dmd400-card-border-size $sp20-dmd400-card-border-color $sp20-dmd400-card-border-style;
+		
+	}
+	&:nth-child(2n+0) {
+		background-color: $sp20-dmd400-card-background-color-2;
+		box-shadow:  $sp20-dmd400-card-shadow-size $sp20-dmd400-card-shadow-color-2;
+		border: $sp20-dmd400-card-border-size $sp20-dmd400-card-border-color-2 $sp20-dmd400-card-border-style;
+		
+	}
+	&:nth-child(3n+0) {
+		background-color: $sp20-dmd400-card-background-color-3;
+		box-shadow: $sp20-dmd400-card-shadow-size $sp20-dmd400-card-shadow-color-3;
+		border: $sp20-dmd400-card-border-size $sp20-dmd400-card-border-color-3 $sp20-dmd400-card-border-style;
+		
+	}
+	&:nth-child(4n+0) {
+		background-color: $sp20-dmd400-card-background-color-4;
+		box-shadow: $sp20-dmd400-card-shadow-size $sp20-dmd400-card-shadow-color-4;
+		border: $sp20-dmd400-card-border-size $sp20-dmd400-card-border-color-4 $sp20-dmd400-card-border-style;
+		
+	}
+	&:hover, &:focus {
+		color:$sp20-dmd400-text-color;
+		padding:$sp20-dmd400-card-padding-size-hover;
+		border: $sp20-dmd400-card-border-size-hover $sp20-dmd400-card-border-color-hover $sp20-dmd400-card-border-style-hover;
+		box-shadow: $sp20-dmd400-card-shadow-size-hover $sp20-dmd400-card-shadow-color-hover;
+		transition: $sp20-dmd400-card-background-color-transition-hover, $sp20-dmd400-card-padding-transition-hover, $sp20-dmd400-card-border-transition-hover, $sp20-dmd400-card-shadow-transition-hover; 	
+		
+		&:nth-child(1n+0) {
+			box-shadow: $sp20-dmd400-card-shadow-size-hover $sp20-dmd400-card-shadow-color-hover;
+			border: $sp20-dmd400-card-border-size-hover $sp20-dmd400-card-border-style-hover darken($sp20-dmd400-card-border-color-hover,10%);
+			background-color: $sp20-dmd400-card-background-color-hover;
+		}
+		&:nth-child(2n+0) {
+			box-shadow: $sp20-dmd400-card-shadow-size-hover $sp20-dmd400-card-shadow-color-hover-2;
+			border: $sp20-dmd400-card-border-size-hover $sp20-dmd400-card-border-style-hover darken($sp20-dmd400-card-border-color-hover-2,10%);
+			background-color: $sp20-dmd400-card-background-color-hover-2;
+		}
+		&:nth-child(3n+0) {
+			box-shadow: $sp20-dmd400-card-shadow-size-hover $sp20-dmd400-card-shadow-color-hover-3;
+			border: $sp20-dmd400-card-border-size-hover $sp20-dmd400-card-border-style-hover darken($sp20-dmd400-card-border-color-hover-3,10%);
+			background-color: $sp20-dmd400-card-background-color-hover-3;
+		}
+		&:nth-child(4n+0) {
+			box-shadow: $sp20-dmd400-card-shadow-size-hover $sp20-dmd400-card-shadow-color-hover-4;
+			border: $sp20-dmd400-card-border-size-hover $sp20-dmd400-card-border-style-hover darken($sp20-dmd400-card-border-color-hover-4,10%);
+			background-color: $sp20-dmd400-card-background-color-hover-4;
+		}
+		
+	}
+	&--title {
+		display: block;
+		font-size: 1.5rem;
+		padding: 2rem 0 0 0;
+		text-transform: uppercase;
+		font-weight:700;
+		text-align: center;
+		
+	}
+	&--name {
+		display: block;
+		font-size: 1rem;
+		padding: 0.5rem 1rem 0;
+		text-align: center;
+		
+	}
+	&--description {
+		display: block;
+		font-size: 0.9rem;
+		padding: 0.75rem 1rem 0;
+	}
+	&--description {
+		display: block;
+		font-size: 0.9rem;
+		padding: 0.75rem 1rem 0;
+	}
+	&--img {
+		-webkit-filter: grayscale(0);
+		filter: grayscale(0);
+		mix-blend-mode: normal;
+		
+	}
+	.card-title {
+		text-transform: uppercase;
+	}
+}
 .exhibition-content {
 	padding-right:1rem;
 }
@@ -956,14 +1329,25 @@ exhibition-19fa-dmd400.exhibition-title-img {
 	height:auto;
 	
 }
+exhibition-20sp-dmd400.exhibition-title-img {
+	width:200px;
+	height:auto;
+	
+}
 
 p.exhibition-19fa-dmd400 {
 	color:darken($fa19-dmd400-text-color,20%);
 }
+
+p.exhibition-20sp-dmd400 {
+	color:darken($sp20-dmd400-text-color,20%);
+}
 .exhibition-01,
 .exhibition-02,
 .exhibition-19fa-dmd300,
-.exhibition-19fa-dmd400 {
+.exhibition-19fa-dmd400,
+.exhibition-20sp-dmd400
+ {
 	&--title {
 		font-family: $roboto-mono;
 		font-size: 2rem;
@@ -1030,6 +1414,61 @@ p.exhibition-19fa-dmd400 {
 		}
 	}
 }
+.exhibition-20sp-dmd400 {
+	&--tag span.highlight {
+		background-color:$sp20-dmd400-exhibition-tag-bg-color;
+		color:$sp20-dmd400-exhibition-tag-color;
+	}
+	&--description {
+		color:$exhibition-description-color;
+	}
+	&--content {
+		font-family: $lora;
+	}
+	&--name {
+		font-size: 1.25rem;
+		color:$sp20-dmd400-text-color-2;
+	}
+	&--social {
+		font-size: 0.9rem;
+	}
+	&--title {
+		@include shadow;
+		font-family: $lora;
+		font-size: 4rem;
+		font-weight:700;
+		color:$sp20-dmd400-title-color;
+		margin-top:2rem;
+		line-height: 0.9;
+		@media #{$small-only} {
+			font-size: 2rem;
+		}
+		@media #{$medium-up} {
+			font-size: 3rem;
+		}
+		@media #{$large-up} {
+			font-size: 4rem;
+		}
+		&.project {
+			color:$sp20-dmd400-project-title-color;
+
+			
+		}
+		
+	}
+	&--project-link {
+		a, a:visited {
+			color: $sp20-dmd400-project-link-color;
+		}
+		a:hover, a:focus {
+			color: $sp20-dmd400-project-link-hover-color;
+			background-color: $sp20-dmd400-project-link-hover-bg-color;
+		}
+		.project-links-title {
+			color:$sp20-dmd400-project-link-color;
+		}
+	}
+}
 
 hr.dark {
 	border-color: #000;
@@ -1044,9 +1483,7 @@ p.card-tags {
 	text-transform: uppercase;
 }
 
-.exhibition-19fa-dmd400 {
 
-}
 // From: https://keithclark.co.uk/articles/pure-css-parallax-websites/demo3-webkit-overflow-fix/
 // .parallax {
 //     height: 500px;

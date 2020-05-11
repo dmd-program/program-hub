@@ -29,6 +29,9 @@ layout: default
     {%- if page.soc-twitter -%}
     <a class="{{ page.exhibition | slugify }} exhibition-card--social" href="{{ page.soc-twitter }}"><span class="soc-twitter exhibition-card--social">Twitter</span></a>
     {% endif %}
+    {%- if page.soc-website -%}
+    <a class="{{ page.exhibition | slugify }} exhibition-card--social" href="{{ page.soc-website }}"><span class="soc-website exhibition-card--social">Website</span></a>
+    {% endif %}
   </div>
 </div>
 <div class="row">
@@ -67,11 +70,12 @@ layout: default
     {% endif %}
 <hr>
     
-    
+{% include explainer-media-player.html id="" provider="local" %}
     <div class="{{ page.exhibition | slugify }}--content exhibition-content">{{ page.content }}</div>
   </article>
   <aside class=" column small-12 medium-6 large-7">
       <div class="row small-up-2">
+        {% include media-player-3d.html id="" provider="local" %}
         {% include media-player.html id="" provider="local" %}
         {% include gallery-advanced size="2" caption="" class="image-popup" %}
           </div>  
