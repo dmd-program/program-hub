@@ -662,7 +662,7 @@ $roboto-mono: 'Roboto Mono', monospace;
 $libre-baskerville: 'libre baskerville', Georgia, serif;
 $lora: 'Lora', serif;
 
-hr.exhibition-01, hr.exhibition-02, hr.exhibition-19fa-dmd300 {
+hr.exhibition-01, hr.exhibition-02, hr.exhibition-19fa-dmd300, hr.exhibition-20sp-dmd300  {
 	// border-bottom: 4px solid #000000;
 	max-width: 100%;
 }
@@ -724,6 +724,8 @@ hr.exhibition-19fa-dmd400 {
 .exhibition-02-project-theme.exhibition-card,
 .exhibition-19fa-dmd300.exhibition-card,
 .exhibition-19fa-dmd300-project-theme.exhibition-card,
+.exhibition-20sp-dmd300.exhibition-card,
+.exhibition-20sp-dmd300-project-theme.exhibition-card,
 .exhibition-20sp-dmd400.exhibition-card,
 .exhibition-20sp-dmd400-project-theme.exhibition-card {
 	border:4px solid #000;
@@ -733,6 +735,57 @@ hr.exhibition-19fa-dmd400 {
 	-webkit-box-shadow: 8px 8px 0px 0px rgba(0,0,0,1);
 	-moz-box-shadow: 8px 8px 0px 0px rgba(0,0,0,1);
 	box-shadow: 8px 8px 0px 0px rgba(0,0,0,1);
+	-webkit-transition: box-shadow 0.3s ease-in 0s;
+	-moz-transition: box-shadow 0.3s ease-in 0s;
+	-o-transition: box-shadow 0.3s ease-in 0s;
+	-ms-transition: box-shadow 0.3s ease-in 0s;
+	transition: box-shadow 0.3s ease-in 0s; 
+	
+	&:hover, &:focus {
+		-webkit-box-shadow: 16px 16px 0px 0px rgba(0,0,0,0.2);
+		-moz-box-shadow: 16px 16px 0px 0px rgba(0,0,0,0.2);
+		box-shadow: 16px 16px 0px 0px rgba(0,0,0,0.2);
+		-webkit-transition: box-shadow 0.1s ease-out 0s;
+		-moz-transition: box-shadow 0.1s ease-out 0s;
+		-o-transition: box-shadow 0.1s ease-out 0s;
+		-ms-transition: box-shadow 0.1s ease-out 0s;
+		transition: box-shadow 0.1s ease-out 0s; 
+	}
+	&--title {
+		display: block;
+		font-size: 1.5rem;
+		padding: 2rem 0 0 0;
+		text-transform: uppercase;
+		font-weight:700;
+		text-align: center;
+	}
+	&--name {
+		display: block;
+		font-size: 1rem;
+		padding: 0.5rem 1rem 0;
+		text-align: center;
+		
+	}
+	&--description {
+		display: block;
+		font-size: 0.9rem;
+		padding: 0.75rem 1rem 0;
+	}
+	.card-title {
+		text-transform: uppercase;
+	}
+}
+
+.exhibition-20sp-dmd300.exhibition-card,
+.exhibition-20sp-dmd300-project-theme.exhibition-card {
+	border:4px solid #515151;
+	background-color: #fff;
+	padding:2rem;
+	display: block;
+	margin-bottom:3rem;
+	-webkit-box-shadow: 8px 8px 0px 0px rgba(81,81,81,1);
+	-moz-box-shadow: 8px 8px 0px 0px rgba(81,81,81,1);
+	box-shadow: 8px 8px 0px 0px rgba(81,81,81,1);
 	-webkit-transition: box-shadow 0.3s ease-in 0s;
 	-moz-transition: box-shadow 0.3s ease-in 0s;
 	-o-transition: box-shadow 0.3s ease-in 0s;
@@ -889,7 +942,7 @@ $sp20-dmd400-card-background-color-transition: background-color 0.2s ease-in-out
 $sp20-dmd400-card-background-color-transition-hover: background-color 0.2s ease-in-out 0s;
 
 // Theme specific styles
-body.exhibition-19fa-dmd400-project-theme {
+body.exhibition-19fa-dmd400-project-theme, {
 	background-image: url('../../assets/exhibitions/19fa-dmd400/bg-noise.png');
 	background-repeat: repeat; 
 	background-position: center;
@@ -1346,6 +1399,7 @@ p.exhibition-20sp-dmd400 {
 .exhibition-02,
 .exhibition-19fa-dmd300,
 .exhibition-19fa-dmd400,
+.exhibition-20sp-dmd300,
 .exhibition-20sp-dmd400
  {
 	&--title {
