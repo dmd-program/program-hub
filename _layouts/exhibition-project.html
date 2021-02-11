@@ -46,25 +46,28 @@ layout: default
     {% endif %}
 
     <!-- Project external website -->
-    {% if page.project-external-link != '' or page.project-external-link != '' or page.production-blog != '' or page.project-doc != '' %}
+    {% if page.project-video-link != '' or page.project-download-link != '' or page.project-external-link != '' or page.production-blog != '' or page.project-doc != '' %}
     <hr>
     {% endif %}
-    {% if page.project-external-link != '' %}
+    {% if page.project-video-link and page.project-video-link != '' and page.project-video-link != empty and page.project-video-link != null %}
+    <p class="{{ page.exhibition | slugify }}--project-link"><span class="project-links-title">Project Video: </span><a href="{{ page.project-video-link }}"><i class="fa fa-external-link"></i> {{ page.project-video-link | truncate: 20 }}</a></p>
+    {% endif %}
+    {% if page.project-external-link and page.project-external-link != '' and page.project-external-link != empty and page.project-external-link != null %}
     <p class="{{ page.exhibition | slugify }}--project-link"><span class="project-links-title">Project Link: </span><a href="{{ page.project-external-link }}"><i class="fa fa-external-link"></i> {{ page.project-external-link | truncate: 20 }}</a></p>
     {% endif %}
 
     <!-- Project files download -->
-    {% if page.project-download-link != '' %}
+    {% if page.project-download-link and page.project-download-link != '' and page.project-download-link != empty and page.project-download-link != null %}
     <p class="{{ page.exhibition | slugify }}--project-link"><span class="project-links-title">Project Files: </span><a href="{{ site.baseurl }}/assets/projects/exhibitions/{{ page.ex-folder }}/{{ page.student-folder }}/{{ page.project-download-link }}"><i class="fa fa-arrow-down"></i> {{ page.project-download-link | truncate: 20 }}</a></p>
 
     {% endif %}
 
-    {% if page.project-doc != '' %}
+    {% if page.project-doc and page.project-doc != '' and page.project-doc != empty and page.project-doc != null %}
     <!-- Project documentation download -->
     <p class="{{ page.exhibition | slugify }}--project-link"><span class="project-links-title">Documentation: </span><a href="{{ site.baseurl }}/assets/projects/exhibitions/{{ page.ex-folder }}/{{ page.student-folder }}/{{ page.project-doc }}"><i class="fa fa-arrow-down"></i> {{ page.project-doc | truncate: 20 }}</a></p>
     {% endif %}
 
-    {% if page.production-blog != '' %}
+    {% if page.production-blog and page.production-blog != '' and page.production-blog != empty and page.production-blog != null %}
     <!-- Production blog link -->
     <p class="{{ page.exhibition | slugify }}--project-link"><span class="project-links-title">Production Blog: </span><a href="{{ page.production-blog }}"><i class="fa fa-external-link"></i> {{ page.production-blog | truncate: 20 }}</a></p>
     {% endif %}

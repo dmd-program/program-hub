@@ -23,31 +23,7 @@ highlight-color:
 private: false
 permalink: /:collection/:title/
 published: true
+order: 2
 ---
-
-<!-- <div class="parallax">
-    
-    <div class="parallax-group">
-        <div class="parallax-element parallax-element--depth-2">
-            <img class="bg-element-img" src="{{ site.baseurl }}{{page.bg-element-1}}" alt="bg element">
-        </div>
-        <div class="parallax-element parallax-element--depth-3">
-            <img class="bg-element-img" src="{{ site.baseurl }}{{page.bg-element-2}}" alt="bg element">
-        </div> -->
-        <!--<div class="parallax-element parallax-element--depth-4">
-            <img class="bg-element-img" src="{{ site.baseurl }}{{page.bg-element-3}}" alt="bg element">
-        </div>
-         <div class="parallax-element parallax-element--depth-5">
-            <img class="bg-element-img" src="{{ site.baseurl }}{{page.bg-element-4}}" alt="bg element">
-        </div> 
-        
-        <div class="parallax-element parallax-element--depth-1">-->
-            {% include exhibition-project-list.html exhibition-theme=page.exhibition-theme exhibition=page.exhibition exhibition-title=page.title exhibition-private=page.private %}
-        <!-- </div>
-        
-        
-        
-    </div>
-    
-</div> -->
+{% include exhibition-project-list.html exhibition-theme=page.exhibition-theme exhibition=page.exhibition exhibition-title=page.title exhibition-private=page.private %}
 
