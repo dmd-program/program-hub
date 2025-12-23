@@ -4,7 +4,7 @@ number: ART 211Y
 credits: 3
 academic-home: Arts & Arch
 program-core: true
-course-type: [Additional]
+course-type: [Prescribed]
 description: Introduction to Digital Art and Design Criticism (3) An introduction to the language, aesthetics, and cultural impacts of digital art and design in contemporary society.
 bulletin-link: https://bulletins.psu.edu/search/?search=%22art+211y%22
 pathway-list: [Digital Design, Media for Civic Enagement]

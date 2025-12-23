@@ -1,0 +1,374 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom base styles matching original Jekyll design */
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    font-family: 'Roboto Mono', Consolas, monospace;
+    @apply bg-white text-black antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Mono', Helvetica, Roboto, Arial, sans-serif;
+    @apply font-medium text-heading;
+  }
+
+  p {
+    @apply font-light;
+  }
+
+  p a {
+    @apply font-medium text-dmd-orange underline;
+  }
+
+  strong, em {
+    @apply font-medium;
+  }
+
+  a {
+    @apply text-black;
+  }
+
+  a:hover {
+    @apply underline;
+  }
+
+  *:focus-visible {
+    outline: 2px solid #ff5722;
+    outline-offset: 2px;
+  }
+
+  /* Screen reader only text */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+
+  .sr-only-focusable:focus,
+  .sr-only-focusable:active {
+    position: static;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    clip: auto;
+    white-space: normal;
+  }
+}
+
+@layer components {
+  /* Nuxt Content prose styling to match site typography */
+  .prose {
+    @apply text-black leading-relaxed max-w-none;
+  }
+
+  .prose h1,
+  .prose h2,
+  .prose h3 {
+    font-family: 'Roboto Mono', Helvetica, Roboto, Arial, sans-serif;
+    @apply text-psu-blue font-semibold tracking-tight;
+  }
+
+  .prose h1 {@apply text-4xl md:text-5xl mb-6 mt-2;}
+  .prose h2 {@apply text-3xl md:text-4xl mb-4 mt-8;}
+  .prose h3 {@apply text-2xl md:text-3xl mb-3 mt-6;}
+
+  .prose p {
+    @apply text-lg md:text-[1.05rem] text-gray-800 mb-4;
+  }
+
+  .prose ul,
+  .prose ol {
+    @apply my-4 pl-5 space-y-2 text-gray-800;
+    list-style: disc;
+  }
+
+  .prose li::marker {
+    color: #ff5722;
+  }
+
+  .prose strong { @apply font-semibold text-black; }
+
+  .prose a { @apply text-dmd-orange font-medium underline decoration-2; }
+
+  .prose blockquote {
+    @apply border-l-4 border-dmd-orange pl-4 italic text-gray-700 my-6;
+  }
+
+  .prose img { @apply rounded-lg shadow-md my-6; }
+
+  .prose > :first-child { @apply mt-0; }
+  .prose > :last-child { @apply mb-0; }
+
+  .highlight {
+    @apply text-white font-normal break-words px-2 uppercase inline-block;
+    background: #000;
+  }
+
+  .highlight.black {
+    background: #212121;
+  }
+
+  .highlight.orange {
+    background: #ff5722;
+  }
+
+  .highlight.blue {
+    background: #2196F3;
+  }
+
+  .highlight.green {
+    background: #4caf50;
+  }
+
+  .callout-heading {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    position: relative;
+    display: inline-block;
+  }
+
+  .callout-heading::after {
+    content: '';
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #ff5722;
+  }
+
+  .callout-heading.black::after {
+    background-color: #212121;
+  }
+
+  .head-spacing {
+    @apply pt-[10vh];
+  }
+
+  .foot-spacing {
+    @apply pb-[10vh];
+  }
+
+  .btn {
+    @apply inline-block px-6 py-3 font-medium transition-colors duration-200 no-underline;
+  }
+
+  .btn-primary {
+    @apply btn bg-dmd-orange text-white;
+  }
+
+  .btn-primary:hover {
+    @apply bg-[#e64a19] no-underline;
+  }
+
+  .btn-secondary {
+    @apply btn bg-psu-blue text-white;
+  }
+
+  .btn-secondary:hover {
+    @apply bg-psu-blue-light no-underline;
+  }
+
+  .btn-outline {
+    @apply btn border-2 border-black text-black hover:bg-black hover:text-white;
+  }
+
+  .card {
+    @apply bg-white shadow-md hover:shadow-lg transition-shadow duration-200;
+  }
+
+  .container-custom {
+    @apply max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Top bar navigation */
+  .top-bar {
+    background: transparent;
+    width: 100%;
+    padding: 2rem;
+    transition: padding 0.25s ease;
+  }
+
+  .top-bar .top-bar-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .top-bar .masthead img {
+    max-width: 8rem;
+    height: 3rem;
+  }
+
+  .top-bar .menu > li > a {
+    color: white;
+    text-transform: uppercase;
+  }
+
+  .top-bar .menu > li > a:hover {
+    text-decoration: underline;
+  }
+
+  .top-bar li.apply-topbar-button a {
+    background: #ff5722;
+    border-radius: 3px;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    white-space: nowrap;
+  }
+
+  .top-bar li.apply-topbar-button a:hover {
+    background: #e64a19;
+    text-decoration: none;
+  }
+
+  @media (max-width: 640px) {
+    .top-bar .masthead {
+      display: block;
+      float: left;
+    }
+
+    .top-bar .menu-button {
+      color: white;
+      display: block;
+      float: right;
+    }
+  }
+}
+
+@layer utilities {
+  .drop-shadow-custom {
+    filter: drop-shadow(0px 0px 4px rgba(0,0,0,0.4));
+  }
+
+  .graph-texture {
+    background: url('/assets/img/graphy.png');
+  }
+
+  .pathways-bg {
+    background: url('/assets/img/pathways-bg.jpg') center center/cover no-repeat;
+  }
+  
+  .svg-header {
+    position: relative;
+    isolation: isolate;
+    text-align: center;
+    background: linear-gradient(33deg, rgba(255, 255, 255, 0.95), rgba(0,0,0,0.25)), 
+      url('/assets/img/dmd-website-banner.jpg') center center/cover no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .svg-header h1 {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 700;
+    line-height: 2.8rem;
+    text-align: left;
+    color: #212121;
+  }
+
+  @media (max-width: 640px) {
+    .svg-header h1 {
+      line-height: 1;
+    }
+  }
+
+  .svg-header h1 span {
+    display: table;
+  }
+
+  .header-content {
+    padding-top: 10vh;
+    padding-bottom: 20vh;
+  }
+  
+  .center {
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* Header backgrounds with overlays */
+  .program-header,
+  .about-header,
+  .community-header {
+    text-align: center;
+    min-height: 56vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .program-header {
+    background: linear-gradient(33deg, rgba(132, 211, 255, 0.25), rgba(0, 0, 0, 0.5)), 
+      url('/assets/img/program-header.jpg') center center/cover no-repeat;
+  }
+
+  .about-header {
+    background: linear-gradient(33deg, rgba(132, 211, 255, 0.25), rgba(0, 0, 0, 0.50)), 
+      url('/assets/img/about-header.jpg') center center/cover no-repeat;
+  }
+
+  .community-header {
+    background: linear-gradient(33deg, rgba(132, 211, 255, 0.25), rgba(0, 0, 0, 0.50)), 
+      url('/assets/img/community-header.jpg') center center/cover no-repeat;
+  }
+
+  /* Quote row for secondary pages */
+  .quote-row {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .quote-row h1 {
+    margin-top: 3.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: white;
+  }
+
+  @media (max-width: 640px) {
+    .quote-row h1 {
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  .quote-row h2 {
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+  }
+
+  @media (max-width: 1024px) {
+    .quote-row h2 {
+      font-size: 1.25rem;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .quote-row h2 {
+      font-size: 1rem;
+    }
+  }
+}

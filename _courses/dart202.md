@@ -1,6 +1,6 @@
 ---
 title: "2D Digital Arts: Computer Graphics"
-number: "DART 202 (ART 201)"
+number: "DART 202"
 credits: 3
 academic-home: Arts & Arch
 program-core: true

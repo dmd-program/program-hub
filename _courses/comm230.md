@@ -1,6 +1,6 @@
 ---
 title: Writing for Media
-number: COMM 230
+number: COMM 230W
 credits: 3
 academic-home: Comm
 program-core: true
